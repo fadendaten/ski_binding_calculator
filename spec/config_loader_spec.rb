@@ -19,7 +19,7 @@ describe "ConfigLoader" do
     end
 
     it "should not be a string" do
-      @dummy_class.criterias[0].class.should_not == Strings
+      @dummy_class.criterias[0].class.should_not == String
     end
   end
     
