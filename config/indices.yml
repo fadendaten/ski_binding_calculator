@@ -1,0 +1,51 @@
+0:
+  - !ruby/range 1..250: 
+      z_value: 0.75
+      mz: &MZ 8
+      my: &MY 29 
+  - !ruby/range 251..270: 
+      z_value: 0.75
+      mz: *MZ
+      my: *MY
+
+1:
+  - !ruby/range 1..250: 
+      z_value: 1
+      mz: &mz 11
+      my: &my 40 
+  - !ruby/range 251..270: 
+      z_value: 1
+      mz: *mz
+      my: *my
+  - !ruby/range 271..290: 
+      z_value: 0.75
+      mz: *mz
+      my: *my
+
+2:
+  - !ruby/range 1..250: 
+      z_value: 1
+      mz: &mz 11
+      my: &my 40 
+  - !ruby/range 251..270: 
+      z_value: 1
+      mz: *mz
+      my: *my
+  - !ruby/range 271..290: 
+      z_value: 0.75
+      mz: *mz
+      my: *my
+
+3:
+  - !ruby/range 1..250: 
+      z_value: 1
+      mz: &mz 11
+      my: &my 40 
+  - !ruby/range 251..270: 
+      z_value: 1
+      mz: *mz
+      my: *my
+  - !ruby/range 271..290: 
+      z_value: 0.75
+      mz: *mz
+      my: *my

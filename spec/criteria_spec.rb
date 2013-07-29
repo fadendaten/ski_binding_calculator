@@ -4,7 +4,7 @@ require 'spec_helper'
 describe Criteria do
 
   before(:each) do
-    @hash = {:weight => 10..13, :size => 10..148}
+    @hash = {:weight => 10..13, :height => 10..148}
     @criteria = Criteria.new(@hash)
   end
 
@@ -24,13 +24,13 @@ describe Criteria do
     end
   end
 
-  describe "size" do
-    it "shoud return the size rang" do
-      @criteria.size.should == (10..148)
+  describe "height" do
+    it "shoud return the height rang" do
+      @criteria.height.should == (10..148)
     end
 
     it "should be a range" do
-      @criteria.size.class.should == Range
+      @criteria.height.class.should == Range
     end
   end
 
