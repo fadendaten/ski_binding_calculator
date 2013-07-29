@@ -1,0 +1,6 @@
+-
+  weight: !ruby/range 10..13
+  height: !ruby/range 1..148
+-
+  weight: !ruby/range 14..17
+  height: !ruby/range 1..148
