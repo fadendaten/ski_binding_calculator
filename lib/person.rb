@@ -1,6 +1,7 @@
 require 'calculator/config_loader'
+require 'bla'
 
-class Person
+class Bla::Person
   include ConfigLoader
   
   attr_reader :type, :weight, :height, :shoe_size, :age

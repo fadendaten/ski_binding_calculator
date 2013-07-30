@@ -1,12 +1,13 @@
 require 'calculator/config_loader'
+require 'bla'
 
-class BindingCalculator 
+class Bla::BindingCalculator 
   include ConfigLoader
   
   def self.setting(person)
     @person = person
-    BindingCalculator.binding_code
-    BindingCalculator.binding_setting
+    Bla::BindingCalculator.binding_code
+    Bla::BindingCalculator.binding_setting
   end
   
   private
