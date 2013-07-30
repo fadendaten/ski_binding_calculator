@@ -17,13 +17,13 @@ describe BindingCalculator do
   end
 
   describe "config loader" do
-    it "should responds to load binding-codes" do
+    it "should responds to load_binding_codes" do
       @calculator.should respond_to :load_binding_codes
     end
   end
 
   describe "binding_codes" do
-    it "should return a valid code" do
+    it "should return a valid binding code" do
       @calculator.binding_code.should == 3
     end
     it "should not be 4" do
@@ -42,6 +42,4 @@ describe BindingCalculator do
       @calculator.binding_setting.should == {"z-value"=>1.75, "turning_moment"=>17, "forward_pressure"=>64}
     end
   end
-
-
 end

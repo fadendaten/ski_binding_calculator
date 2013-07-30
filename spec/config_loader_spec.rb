@@ -14,7 +14,7 @@ describe "ConfigLoader" do
   end
 
   describe "first element of the array" do
-    it "should be a hash" do
+    it "should be a BindingCode" do
       @dummy_class.load_binding_codes[0].class.should == BindingCode
     end
 
