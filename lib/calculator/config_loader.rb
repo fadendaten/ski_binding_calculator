@@ -4,11 +4,12 @@ module ConfigLoader
   extend self
 
   def load_binding_codes
-    criterias ||= parse_yml("binding_codes.yml")   
+    binding_codes ||= parse_yml("binding_codes.yml")   
   end
   
   def load_binding_settings(code)
-    indices ||= parse_yml("binding_settings.yml")   
+    binding_settings ||= parse_yml("binding_settings.yml")  
+    binding_settings[code] 
   end
 
   private
