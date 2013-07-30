@@ -12,6 +12,11 @@ class BindingCalculator
     @shoe_size = shoe_size 
     @age = age
   end
+  
+  def setting(person)
+    code
+    binding_values
+  end
 
   def code 
     @code = -1
@@ -26,14 +31,7 @@ class BindingCalculator
     return @code
   end
 
-  #def z_value
-  #  puts load_indices(0)
-  #  #self.indices.each do |i|
-  #  #  puts i if i.size.include?(@shoe_size)
-  #  #  puts i.z_value if i.size.include?(@shoe_size)
-  #  #  puts i.turning_moment if i.size.include?(@shoe_size)
-  #  #  puts i.forward_pressure if i.size.include?(@shoe_size)
-  #  #  return i.z_value if i.size.include?(@shoe_size)
-  #  #end
-  #end
+  def binding_values
+    
+  end
 end

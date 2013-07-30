@@ -9,6 +9,26 @@
     z_value: 0.75
     turning_moment: *turning_moment
     forward_pressure: *forward_pressure
+  - !ruby/object:BindingSetting  
+    range: ~
+    z_value: ~
+    turning_moment: ~
+    forward_pressure: ~
+  - !ruby/object:BindingSetting  
+    range: ~
+    z_value: ~
+    turning_moment: ~
+    forward_pressure: ~
+  - !ruby/object:BindingSetting  
+    range: ~
+    z_value: ~
+    turning_moment: ~
+    forward_pressure: ~
+  - !ruby/object:BindingSetting  
+    range: ~
+    z_value: ~
+    turning_moment: ~
+    forward_pressure: ~
 - 
   - !ruby/object:BindingSetting
     range: !ruby/range 1..250
@@ -25,6 +45,21 @@
     z_value: 0.75
     turning_moment: *turning_moment
     forward_pressure: *forward_pressure
+  - !ruby/object:BindingSetting  
+    range: ~
+    z_value: ~
+    turning_moment: ~
+    forward_pressure: ~
+  - !ruby/object:BindingSetting  
+    range: ~
+    z_value: ~
+    turning_moment: ~
+    forward_pressure: ~
+  - !ruby/object:BindingSetting  
+    range: ~
+    z_value: ~
+    turning_moment: ~
+    forward_pressure: ~
 -  
   - !ruby/object:BindingSetting
     range: !ruby/range 1..250
@@ -40,7 +75,22 @@
     range: !ruby/range 271..290
     z_value: 1
     turning_moment: *turning_moment
-    forward_pressure: *forward_pressure   
+    forward_pressure: *forward_pressure
+  - !ruby/object:BindingSetting  
+    range: ~
+    z_value: ~
+    turning_moment: ~
+    forward_pressure: ~
+  - !ruby/object:BindingSetting  
+    range: ~
+    z_value: ~
+    turning_moment: ~
+    forward_pressure: ~
+  - !ruby/object:BindingSetting  
+    range: ~
+    z_value: ~
+    turning_moment: ~
+    forward_pressure: ~
 -
   - !ruby/object:BindingSetting
     range: !ruby/range 1..250 
@@ -62,6 +112,16 @@
     z_value: 1.25
     turning_moment: *turning_moment
     forward_pressure: *forward_pressure
+  - !ruby/object:BindingSetting  
+    range: ~
+    z_value: ~
+    turning_moment: ~
+    forward_pressure: ~
+  - !ruby/object:BindingSetting  
+    range: ~
+    z_value: ~
+    turning_moment: ~
+    forward_pressure: ~
 -
   - !ruby/object:BindingSetting
     range: !ruby/range 1..250 
@@ -88,6 +148,11 @@
     z_value: 1.5
     turning_moment: *turning_moment
     forward_pressure: *forward_pressure
+  - !ruby/object:BindingSetting  
+    range: ~
+    z_value: ~
+    turning_moment: ~
+    forward_pressure: ~
 -
   - !ruby/object:BindingSetting
     range: !ruby/range 1..250
@@ -157,7 +222,7 @@
 -
   - !ruby/object:BindingSetting
     range: !ruby/range 1..250 
-    z_value: ~ #of course dear yaml nil is ~ ;-)
+    z_value: 3.5
     turning_moment: &turning_moment 31
     forward_pressure: &forward_pressure 120
   - !ruby/object:BindingSetting
@@ -190,7 +255,7 @@
 -
   - !ruby/object:BindingSetting
     range: !ruby/range 1..250 
-    z_value: ~ 
+    z_value: 3.5
     turning_moment: &turning_moment 37
     forward_pressure: &forward_pressure 141
   - !ruby/object:BindingSetting
@@ -223,7 +288,7 @@
 -
   - !ruby/object:BindingSetting
     range: !ruby/range 1..250
-    z_value: ~ 
+    z_value: 3.5 
     turning_moment: &turning_moment 43
     forward_pressure: &forward_pressure 165
   - !ruby/object:BindingSetting
@@ -256,7 +321,7 @@
 -
   - !ruby/object:BindingSetting
     range: !ruby/range 1..250
-    z_value: ~ 
+    z_value: 3.5
     turning_moment: &turning_moment 50
     forward_pressure: &forward_pressure 194
   - !ruby/object:BindingSetting
@@ -289,7 +354,7 @@
 -
   - !ruby/object:BindingSetting
     range: !ruby/range 1..250
-    z_value: ~ 
+    z_value: 3.5
     turning_moment: &turning_moment 58
     forward_pressure: &forward_pressure 229
   - !ruby/object:BindingSetting
@@ -322,12 +387,12 @@
 -
   - !ruby/object:BindingSetting
     range: !ruby/range 1..250
-    z_value: ~ 
+    z_value: 3.5 
     turning_moment: &turning_moment 67
     forward_pressure: &forward_pressure 271
   - !ruby/object:BindingSetting
     range: !ruby/range 251..270
-    z_value: ~
+    z_value: 7.5
     turning_moment: *turning_moment
     forward_pressure: *forward_pressure
   - !ruby/object:BindingSetting
@@ -355,12 +420,12 @@
 -
   - !ruby/object:BindingSetting
     range: !ruby/range 1..250
-    z_value: ~ 
+    z_value: 3.5 
     turning_moment: &turning_moment 78
     forward_pressure: &forward_pressure 320
   - !ruby/object:BindingSetting
     range: !ruby/range 251..270
-    z_value: ~
+    z_value: 7.5
     turning_moment: *turning_moment
     forward_pressure: *forward_pressure
   - !ruby/object:BindingSetting
@@ -388,12 +453,12 @@
 -
   - !ruby/object:BindingSetting
     range: !ruby/range 1..250
-    z_value: ~ 
+    z_value: 3.5 
     turning_moment: &turning_moment 91
     forward_pressure: &forward_pressure 380
   - !ruby/object:BindingSetting
     range: !ruby/range 251..270
-    z_value: ~
+    z_value: 7.5
     turning_moment: *turning_moment
     forward_pressure: *forward_pressure
   - !ruby/object:BindingSetting

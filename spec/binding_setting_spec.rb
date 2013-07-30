@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Index do
+describe BindingSetting do
 
   before(:each) do
     @hash = {(1..250) => {:z_value => 1.5, :my => 52, :mz => 14}}

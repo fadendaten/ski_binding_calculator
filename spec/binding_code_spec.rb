@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 
-describe Criteria do
+describe BindingCode do
 
   before(:each) do
     @hash = {:weight => 10..13, :height => 10..148}
