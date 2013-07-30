@@ -1,0 +1,2 @@
+module SkiBinding
+end

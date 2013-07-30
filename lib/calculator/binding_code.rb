@@ -1,5 +1,5 @@
-require 'bla'
+require 'ski_binding'
 
-class Bla::BindingCode
+class SkiBinding::BindingCode
   attr_reader :weight, :height
 end

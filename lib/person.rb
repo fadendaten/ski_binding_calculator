@@ -1,7 +1,7 @@
 require 'calculator/config_loader'
-require 'bla'
+require 'ski_binding'
 
-class Bla::Person
+class SkiBinding::Person
   include ConfigLoader
   
   attr_reader :type, :weight, :height, :shoe_size, :age

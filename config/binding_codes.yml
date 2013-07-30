@@ -1,40 +1,40 @@
-- !ruby/object:Bla::BindingCode
+- !ruby/object:SkiBinding::BindingCode
   weight: !ruby/range 10..13
   height: !ruby/range 1..148
-- !ruby/object:Bla::BindingCode
+- !ruby/object:SkiBinding::BindingCode
   weight: !ruby/range 14..17
   height: !ruby/range 1..148
-- !ruby/object:Bla::BindingCode
+- !ruby/object:SkiBinding::BindingCode
   weight: !ruby/range 18..21
   height: !ruby/range 1..148
-- !ruby/object:Bla::BindingCode
+- !ruby/object:SkiBinding::BindingCode
   weight: !ruby/range 22..25
   height: !ruby/range 1..148
-- !ruby/object:Bla::BindingCode
+- !ruby/object:SkiBinding::BindingCode
   weight: !ruby/range 26..30
   height: !ruby/range 1..148
-- !ruby/object:Bla::BindingCode
+- !ruby/object:SkiBinding::BindingCode
   weight: !ruby/range 31..35
   height: !ruby/range 1..148
-- !ruby/object:Bla::BindingCode
+- !ruby/object:SkiBinding::BindingCode
   weight: !ruby/range 36..41
   height: !ruby/range 1..148
-- !ruby/object:Bla::BindingCode
+- !ruby/object:SkiBinding::BindingCode
   weight: !ruby/range 42..48
   height: !ruby/range 1..148
-- !ruby/object:Bla::BindingCode
+- !ruby/object:SkiBinding::BindingCode
   weight: !ruby/range 49..57
   height: !ruby/range 149..157
-- !ruby/object:Bla::BindingCode
+- !ruby/object:SkiBinding::BindingCode
   weight: !ruby/range 58..66
   height: !ruby/range 158..166
-- !ruby/object:Bla::BindingCode
+- !ruby/object:SkiBinding::BindingCode
   weight: !ruby/range 67..78
   height: !ruby/range 167..178
-- !ruby/object:Bla::BindingCode
+- !ruby/object:SkiBinding::BindingCode
   weight: !ruby/range 79..94
   height: !ruby/range 179..194
-- !ruby/object:Bla::BindingCode
+- !ruby/object:SkiBinding::BindingCode
   weight: !ruby/range
     begin: 1
     end: .inf
