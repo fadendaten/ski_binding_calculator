@@ -1,45 +1,45 @@
 require 'spec_helper'
 
 describe BindingCalculator do
-  before(:each) do
-    @type = DriverType.new("2",2)
+  before(:all) do
+    @type = 2
     @weight = 16
     @height = 308
     @size = 192 
-    @calculator = BindingCalculator.new(@type, @weight, @height, @size)
+    @age = 30
+    @calculator = BindingCalculator.new(@type, @weight, @height, @size, @age)
   end
 
   describe "new" do
     it "should return a BindingCalculator class" do
-      BindingCalculator.new(@type, @weight, @height, @size).class.should == BindingCalculator
+      BindingCalculator.new(@type, @weight, @height, @size, @age).class.should == BindingCalculator
     end
   end
 
-  describe "config laoder" do
-    it "should responds to criterias" do
-      @calculator.should respond_to :criterias
-    end
-    it "should responds to load_criterias" do
-      @calculator.should respond_to :load_criterias
+  describe "config loader" do
+    it "should responds to load binding-codes" do
+      @calculator.should respond_to :load_binding_codes
     end
   end
 
-  describe "code" do
+  describe "binding_codes" do
     it "should return a valid code" do
-      @calculator.code.should == 3
+      @calculator.binding_code.should == 3
     end
     it "should not be 4" do
-      @calculator.code.should_not == 4
+      @calculator.binding_code.should_not == 4
     end
   end
 
-  describe "z_value" do
-    it "should return a Float" do
-      @calculator.z_value.class.should == Float
+  describe "binding_setting" do
+    it "should return a Hash" do
+      @calculator.binding_code
+      @calculator.binding_setting.class.should == Hash
     end
 
     it "should return a valid value" do
-      @calculator.z_value.should == 0.75
+      @calculator.binding_code
+      @calculator.binding_setting.should == {"z-value"=>1.75, "turning_moment"=>17, "forward_pressure"=>64}
     end
   end
 

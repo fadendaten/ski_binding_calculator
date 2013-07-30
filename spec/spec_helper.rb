@@ -8,10 +8,8 @@ Spork.prefork do
     SPEC_ROOT = File.expand_path("../", __FILE__)
   end
 
-
   RSpec.configure do |config|
   end
-
 
   Spork.each_run do
     require 'ski_binding_calculator'
