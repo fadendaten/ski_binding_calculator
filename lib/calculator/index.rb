@@ -9,5 +9,4 @@ class Index
     @mz = hash["mz"] || hash[:mz]
     @my = hash["my"] || hash[:my]
   end
-
 end

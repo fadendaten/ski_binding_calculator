@@ -37,8 +37,6 @@ module ConfigLoader
   end
 
   def parse_yml(filename)
-
-
     YAML::load(File.open("#{file_path}/#{filename}"))
   end
   
