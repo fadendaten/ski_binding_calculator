@@ -4,3 +4,40 @@
 -
   weight: !ruby/range 14..17
   height: !ruby/range 1..148
+-
+  weight: !ruby/range 18..21
+  height: !ruby/range 1..148
+-
+  weight: !ruby/range 22..25
+  height: !ruby/range 1..148
+-
+  weight: !ruby/range 26..30
+  height: !ruby/range 1..148
+-
+  weight: !ruby/range 31..35
+  height: !ruby/range 1..148
+-
+  weight: !ruby/range 36..41
+  height: !ruby/range 1..148
+-
+  weight: !ruby/range 42..48
+  height: !ruby/range 1..148
+-
+  weight: !ruby/range 49..57
+  height: !ruby/range 149..157
+-
+  weight: !ruby/range 58..66
+  height: !ruby/range 158..166
+-
+  weight: !ruby/range 67..78
+  height: !ruby/range 167..178
+-
+  weight: !ruby/range 79..94
+  height: !ruby/range 179..194
+-
+  weight: !ruby/range
+    begin: 1
+    end: .inf
+  height: !ruby/range
+    begin: 1
+    end: .inf
