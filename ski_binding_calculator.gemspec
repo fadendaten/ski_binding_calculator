@@ -8,6 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Jonas Ruef, Felix Langenegger"]
   s.email       = 'support@fadendaten.ch'
   s.homepage    = 'http://fadendaten.ch'
+  s.license = 'MIT'
+  
   
   s.add_development_dependency "rspec", "~> 2.14.1"
   s.add_development_dependency "spork", "~> 0.9.2"
