@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
 
   s.name        = 'ski_binding_calculator'
-  s.version     = '0.5.0'
+  s.version     = '0.5.1'
   s.date        = '2013-08-04'
   s.summary     = "Ski Binding Calculator"
   s.description = "calculate the z-value, forward pressure and turing
