@@ -2,7 +2,7 @@ Gem::Specification.new do |s|
 
   s.name        = 'ski_binding_calculator'
   s.version     = '0.5'
-  s.date        = '2013-07-28'
+  s.date        = '2013-08-04'
   s.summary     = "Ski Binding Calculator"
   s.description = "A little gem to calculate the z-value accord to the iso 11088 norm."
   s.authors     = ["Jonas Ruef, Felix Langenegger"]
