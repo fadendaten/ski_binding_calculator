@@ -5,7 +5,7 @@ describe "ConfigLoader" do
   before(:all) do
     @range = 0..14 #cause 14 codes
     @dummy_class = DummyClass.new
-    @dummy_class.extend(ConfigLoader)
+    @dummy_class.extend(SkiBinding::ConfigLoader)
   end
 
   describe "loading binding codes:" do

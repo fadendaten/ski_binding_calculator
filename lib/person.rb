@@ -1,5 +1,5 @@
 class SkiBinding::Person
-  include ConfigLoader
+  include SkiBinding::ConfigLoader
   
   attr_reader :type, :weight, :height, :shoe_size, :age
   

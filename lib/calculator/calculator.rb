@@ -1,7 +1,7 @@
 require 'calculator/config_loader'
 
 class SkiBinding::Calculator 
-  extend ConfigLoader
+  extend SkiBinding::ConfigLoader
   
   def self.setting(person)
     code = self.binding_code(person)

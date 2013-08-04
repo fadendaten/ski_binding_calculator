@@ -1,6 +1,6 @@
 require 'yaml'
 
-module ConfigLoader
+module SkiBinding::ConfigLoader
   extend self
 
   def load_binding_codes
