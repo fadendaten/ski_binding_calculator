@@ -14,8 +14,8 @@ class SkiBinding::Person
   private
 
     def validate_type(type)
-      types = {"type1-" => -1, "type1" => 0, "type2" => 1, 
-               "type3" => 2, "type3+" => 3}
+      types = {"Type1-" => -1, "Type1" => 0, "Type2" => 1, 
+               "Type3" => 2, "Type3+" => 3}
       keys = types.keys
       types[type] if keys.include?(type)
     end
