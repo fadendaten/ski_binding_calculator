@@ -3,12 +3,12 @@ class SkiBinding::Person
   
   attr_reader :type, :weight, :height, :shoe_size, :age
   
-  def initialize(hash)
-    @type   = validate_type(hash["type"] || hash[:type])
-    @weight =  hash["weight"] || hash[:weight]
-    @height =  hash["height"] || hash[:height]
-    @shoe_size =  hash["shoe_size"] || hash[:shoe_size]
-    @age =  hash["age"] || hash[:age]
+  def initialize(values_hash)
+    @type   = validate_type(values_hash["type"] || values_hash[:type])
+    @weight =  values_hash["weight"] || values_hash[:weight]
+    @height =  values_hash["height"] || values_hash[:height]
+    @shoe_size =  values_hash["shoe_size"] || values_hash[:shoe_size]
+    @age =  values_hash["age"] || values_hash[:age]
   end
   
   private

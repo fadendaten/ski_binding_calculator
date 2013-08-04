@@ -3,6 +3,8 @@ require 'spork'
 
 Spork.prefork do
   require 'rspec'
+  require 'simplecov'
+  SimpleCov.start
 
   unless defined?(SPEC_ROOT)
     SPEC_ROOT = File.expand_path("../", __FILE__)
