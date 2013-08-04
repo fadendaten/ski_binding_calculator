@@ -1,6 +1,3 @@
-require 'calculator/config_loader'
-require 'ski_binding'
-
 class SkiBinding::Person
   include ConfigLoader
   
@@ -15,6 +12,7 @@ class SkiBinding::Person
   end
   
   private
+
     def validate_type(type)
       types = {"type1-" => -1, "type1" => 0, "type2" => 1, 
                "type3" => 2, "type3+" => 3}
