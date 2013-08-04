@@ -1,6 +1,4 @@
 class SkiBinding::Person
-  include SkiBinding::ConfigLoader
-  
   attr_reader :type, :weight, :height, :shoe_size, :age
   
   def initialize(values_hash)
