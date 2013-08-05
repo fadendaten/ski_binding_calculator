@@ -1,3 +1,5 @@
+#weight [kg]
+#height [cm]
 - !ruby/object:SkiBinding::Code
   weight: !ruby/range 10..13
   height: !ruby/range 1..148

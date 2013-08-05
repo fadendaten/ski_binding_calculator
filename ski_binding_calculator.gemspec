@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.version     = '0.5.1'
   s.date        = '2013-08-04'
   s.summary     = "Ski Binding Calculator"
-  s.description = "calculate the z-value, forward pressure and turing
+  s.description = "calculate the z-value, forward pressure and turning
                    moment according to ISO 11088."
   s.authors     = ["Jonas Ruef, Felix Langenegger"]
   s.email       = 'support@fadendaten.ch'

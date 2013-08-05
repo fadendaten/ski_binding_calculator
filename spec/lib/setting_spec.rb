@@ -13,7 +13,7 @@ describe SkiBinding::Setting do
     end
     
     it "has attribute range" do
-      @setting.should respond_to :range
+      @setting.should respond_to :shoe_size_range
     end
     
     it "has attribute z_value" do

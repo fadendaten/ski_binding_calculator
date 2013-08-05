@@ -29,9 +29,11 @@ class SkiBinding::Calculator
     def self.binding_setting(code, person)
       settings = self.load_binding_settings(code)
       settings.each do |s|
-        return {"z_value" => s.z_value, 
-                "turning_moment" => s.turning_moment, 
-                "forward_pressure" => s.forward_pressure} if s.range.include?(person.shoe_size)
+        if s.shoe_size_range.include?(person.shoe_size)
+          return {"z_value" => s.z_value, 
+                  "turning_moment" => s.turning_moment, 
+                  "forward_pressure" => s.forward_pressure}
+        end
       end
     end
 end
