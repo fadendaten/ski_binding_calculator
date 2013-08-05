@@ -3,7 +3,7 @@ require 'spec_helper'
 describe "ConfigLoader" do 
 
   before(:all) do
-    @range = 0..14 #cause 14 codes
+    @range = 0..14 #cause 15 codes
     @dummy_class = DummyClass.new
     @dummy_class.extend(SkiBinding::ConfigLoader)
   end

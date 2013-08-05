@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe SkiBinding::Setting do
-  describe "new" do
+  describe "#new" do
     it "should return a Setting class" do
       SkiBinding::Setting.new.class.should == SkiBinding::Setting
     end
@@ -12,7 +12,7 @@ describe SkiBinding::Setting do
       @setting = SkiBinding::Setting.new
     end
     
-    it "has attribute range" do
+    it "has attribute shoe_size_range" do
       @setting.should respond_to :shoe_size_range
     end
     

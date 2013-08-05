@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe SkiBinding::Code do
-  describe "new" do
+  describe "#new" do
     it "should return a Code class" do
       SkiBinding::Code.new.class.should == SkiBinding::Code
     end
