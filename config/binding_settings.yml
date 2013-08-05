@@ -1,488 +1,488 @@
 # shoe_size_range [mm]
-# turning_moment [Nm]
-# forward_pressure [Nm]
+# twist [Nm]
+# forward_lean [Nm]
 -
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 1..250
     z_value: 0.75
-    turning_moment: &turning_moment 8
-    forward_pressure: &forward_pressure 29 
+    twist: &turning_moment 8
+    forward_lean: &forward_lean 29 
   - !ruby/object:SkiBinding::Setting  
     shoe_size_range: !ruby/range 251..270
     z_value: 0.75
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting  
     shoe_size_range: ~
     z_value: ~
-    turning_moment: ~
-    forward_pressure: ~
+    twist: ~
+    forward_lean: ~
   - !ruby/object:SkiBinding::Setting  
     shoe_size_range: ~
     z_value: ~
-    turning_moment: ~
-    forward_pressure: ~
+    twist: ~
+    forward_lean: ~
   - !ruby/object:SkiBinding::Setting  
     shoe_size_range: ~
     z_value: ~
-    turning_moment: ~
-    forward_pressure: ~
+    twist: ~
+    forward_lean: ~
   - !ruby/object:SkiBinding::Setting  
     shoe_size_range: ~
     z_value: ~
-    turning_moment: ~
-    forward_pressure: ~
+    twist: ~
+    forward_lean: ~
 - 
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 1..250
     z_value: 1
-    turning_moment: &turning_moment 11
-    forward_pressure: &forward_pressure 40 
+    twist: &turning_moment 11
+    forward_lean: &forward_lean 40 
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 251..270
     z_value: 1
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 271..290
     z_value: 0.75
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting  
     shoe_size_range: ~
     z_value: ~
-    turning_moment: ~
-    forward_pressure: ~
+    twist: ~
+    forward_lean: ~
   - !ruby/object:SkiBinding::Setting  
     shoe_size_range: ~
     z_value: ~
-    turning_moment: ~
-    forward_pressure: ~
+    twist: ~
+    forward_lean: ~
   - !ruby/object:SkiBinding::Setting  
     shoe_size_range: ~
     z_value: ~
-    turning_moment: ~
-    forward_pressure: ~
+    twist: ~
+    forward_lean: ~
 -  
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 1..250
     z_value: 1.5
-    turning_moment: &turning_moment 14
-    forward_pressure: &forward_pressure 52
+    twist: &turning_moment 14
+    forward_lean: &forward_lean 52
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 251..270
     z_value: 1.25
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 271..290
     z_value: 1
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting  
     shoe_size_range: ~
     z_value: ~
-    turning_moment: ~
-    forward_pressure: ~
+    twist: ~
+    forward_lean: ~
   - !ruby/object:SkiBinding::Setting  
     shoe_size_range: ~
     z_value: ~
-    turning_moment: ~
-    forward_pressure: ~
+    twist: ~
+    forward_lean: ~
   - !ruby/object:SkiBinding::Setting  
     shoe_size_range: ~
     z_value: ~
-    turning_moment: ~
-    forward_pressure: ~
+    twist: ~
+    forward_lean: ~
 -
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 1..250 
     z_value: 1.75
-    turning_moment: &turning_moment 17
-    forward_pressure: &forward_pressure 64
+    twist: &turning_moment 17
+    forward_lean: &forward_lean 64
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 251..270
     z_value: 1.5
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 271..290
     z_value: 1.5
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 291..310
     z_value: 1.25
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting  
     shoe_size_range: ~
     z_value: ~
-    turning_moment: ~
-    forward_pressure: ~
+    twist: ~
+    forward_lean: ~
   - !ruby/object:SkiBinding::Setting  
     shoe_size_range: ~
     z_value: ~
-    turning_moment: ~
-    forward_pressure: ~
+    twist: ~
+    forward_lean: ~
 -
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 1..250 
     z_value: 2.25
-    turning_moment: &turning_moment 20
-    forward_pressure: &forward_pressure 75
+    twist: &turning_moment 20
+    forward_lean: &forward_lean 75
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 251..270 
     z_value: 2
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 271..290
     z_value: 1.75
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 291..310
     z_value: 1.5
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 311..330 
     z_value: 1.5
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting  
     shoe_size_range: ~
     z_value: ~
-    turning_moment: ~
-    forward_pressure: ~
+    twist: ~
+    forward_lean: ~
 -
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 1..250
     z_value: 2.75
-    turning_moment: &turning_moment 23
-    forward_pressure: &forward_pressure 87
+    twist: &turning_moment 23
+    forward_lean: &forward_lean 87
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 251..270 
     z_value: 2.5
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 271..290
     z_value: 2.25
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 291..310
     z_value: 2
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 311..330
     z_value: 1.75
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range
       begin: 331
       end: .inf
     z_value: 1.75
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
 -
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 1..250
     z_value: 3.5
-    turning_moment: &turning_moment 27
-    forward_pressure: &forward_pressure 102
+    twist: &turning_moment 27
+    forward_lean: &forward_lean 102
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 251..270
     z_value: 3
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 271..290
     z_value: 2.75
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 291..310
     z_value: 2.5
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 311..330
     z_value: 2.25
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range
       begin: 331
       end: .inf
     z_value: 2
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
 -
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 1..250 
     z_value: 3.5
-    turning_moment: &turning_moment 31
-    forward_pressure: &forward_pressure 120
+    twist: &turning_moment 31
+    forward_lean: &forward_lean 120
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 251..270
     z_value: 3.5
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 271..290
     z_value: 3
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 291..310
     z_value: 3
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 311..330
     z_value: 2.75
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range
       begin: 331
       end: .inf
     z_value: 2.5
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
 -
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 1..250 
     z_value: 3.5
-    turning_moment: &turning_moment 37
-    forward_pressure: &forward_pressure 141
+    twist: &turning_moment 37
+    forward_lean: &forward_lean 141
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 251..270
     z_value: 4.5
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 271..290
     z_value: 4
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 291..310
     z_value: 3.5
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 311..330
     z_value: 3.5
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range
       begin: 331
       end: .inf
     z_value: 3
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
 -
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 1..250
     z_value: 3.5 
-    turning_moment: &turning_moment 43
-    forward_pressure: &forward_pressure 165
+    twist: &turning_moment 43
+    forward_lean: &forward_lean 165
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 251..270
     z_value: 5.5
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 271..290
     z_value: 5
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 291..310
     z_value: 4.5
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 311..330
     z_value: 4
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range
       begin: 331
       end: .inf
     z_value: 3.5
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
 -
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 1..250
     z_value: 3.5
-    turning_moment: &turning_moment 50
-    forward_pressure: &forward_pressure 194
+    twist: &turning_moment 50
+    forward_lean: &forward_lean 194
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 251..270
     z_value: 6.5
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 271..290
     z_value: 6
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 291..310
     z_value: 5.5
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 311..330
     z_value: 5
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range
       begin: 331
       end: .inf
     z_value: 4.5
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
 -
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 1..250
     z_value: 3.5
-    turning_moment: &turning_moment 58
-    forward_pressure: &forward_pressure 229
+    twist: &turning_moment 58
+    forward_lean: &forward_lean 229
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 251..270
     z_value: 7.5
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 271..290
     z_value: 7
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 291..310
     z_value: 6.5
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 311..330
     z_value: 6
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range
       begin: 331
       end: .inf
     z_value: 5.5
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
 -
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 1..250
     z_value: 3.5 
-    turning_moment: &turning_moment 67
-    forward_pressure: &forward_pressure 271
+    twist: &turning_moment 67
+    forward_lean: &forward_lean 271
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 251..270
     z_value: 7.5
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 271..290
     z_value: 8.5
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 291..310
     z_value: 8
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 311..330
     z_value: 7
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range
       begin: 331
       end: .inf
     z_value: 6.5
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
 -
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 1..250
     z_value: 3.5 
-    turning_moment: &turning_moment 78
-    forward_pressure: &forward_pressure 320
+    twist: &turning_moment 78
+    forward_lean: &forward_lean 320
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 251..270
     z_value: 7.5
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 271..290
     z_value: 10
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 291..310
     z_value: 9.5
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 311..330
     z_value: 8.5
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range
       begin: 331
       end: .inf
     z_value: 8
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
 -
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 1..250
     z_value: 3.5 
-    turning_moment: &turning_moment 91
-    forward_pressure: &forward_pressure 380
+    twist: &turning_moment 91
+    forward_lean: &forward_lean 380
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 251..270
     z_value: 7.5
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 271..290
     z_value: 11.5
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 291..310
     z_value: 11
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range 311..330
     z_value: 10
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
     shoe_size_range: !ruby/range
       begin: 331
       end: .inf
     z_value: 9.5
-    turning_moment: *turning_moment
-    forward_pressure: *forward_pressure
+    twist: *turning_moment
+    forward_lean: *forward_lean

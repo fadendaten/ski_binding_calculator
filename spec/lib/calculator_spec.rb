@@ -17,7 +17,7 @@ describe SkiBinding::Calculator do
   describe "#setting" do
     it "returns a valid setting" do
       SkiBinding::Calculator.setting(@person).should == 
-      {"z_value"=>6, "turning_moment"=>58, "forward_pressure"=>229}
+      {"z_value"=>6, "twist"=>58, "forward_lean"=>229}
     end
   end
   
@@ -49,7 +49,7 @@ describe SkiBinding::Calculator do
     end
     
     it "returns unchanged code if weight less than 13kg" do
-      # beacuse we set "Type2" the code would be changed to 1
+      # because we set "Type2" the code would be changed by 1
       hash = {:type => "Type2", :weight => 12, 
             :height => 147, :shoe_size => 249, :age => 30}
       @person = SkiBinding::Person.new(hash)
@@ -60,7 +60,7 @@ describe SkiBinding::Calculator do
   describe "#binding_setting" do
     it "returns a valid setting" do
       SkiBinding::Calculator.binding_setting(11, @person).should == 
-      {"z_value"=>6, "turning_moment"=>58, "forward_pressure"=>229}
+      {"z_value"=>6, "twist"=>58, "forward_lean"=>229}
     end
   end
 end

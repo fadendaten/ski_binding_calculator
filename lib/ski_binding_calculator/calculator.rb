@@ -31,8 +31,8 @@ class SkiBinding::Calculator
       settings.each do |s|
         if s.shoe_size_range.include?(person.shoe_size)
           return {"z_value" => s.z_value, 
-                  "turning_moment" => s.turning_moment, 
-                  "forward_pressure" => s.forward_pressure}
+                  "twist" => s.twist, 
+                  "forward_lean" => s.forward_lean}
         end
       end
     end

@@ -38,8 +38,8 @@
   height: !ruby/range 179..194
 - !ruby/object:SkiBinding::Code
   weight: !ruby/range
-    begin: 1
+    begin: 95
     end: .inf
   height: !ruby/range
-    begin: 1
+    begin: 195
     end: .inf

@@ -20,12 +20,12 @@ describe SkiBinding::Setting do
       @setting.should respond_to :z_value
     end
     
-    it "has attribute turning_moment" do
-      @setting.should respond_to :turning_moment
+    it "has attribute twist" do
+      @setting.should respond_to :twist
     end
     
-    it "has attribute forward_pressure" do
-      @setting.should respond_to :forward_pressure
+    it "has attribute forward_lean" do
+      @setting.should respond_to :forward_lean
     end
   end
 end
