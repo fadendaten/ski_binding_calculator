@@ -1,4 +1,4 @@
-require 'calculator/config_loader'
+require 'ski_binding_calculator/config_loader'
 
 class SkiBinding::Calculator 
   extend SkiBinding::ConfigLoader

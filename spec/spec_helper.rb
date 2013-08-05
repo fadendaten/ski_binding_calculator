@@ -1,9 +1,9 @@
 require 'rubygems'
 require 'spork'
+require 'simplecov'
 
 Spork.prefork do
   require 'rspec'
-  require 'simplecov'
   SimpleCov.start
 
   unless defined?(SPEC_ROOT)
