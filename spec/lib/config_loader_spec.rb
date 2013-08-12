@@ -27,7 +27,7 @@ describe "ConfigLoader" do
       end
       
       it "has 15 codes" do
-        @codes.size.should == 13
+        @codes.size.should == 15
       end
     end
   end
@@ -61,7 +61,7 @@ describe "ConfigLoader" do
       
       it "has 6 settings" do
         @settings_all_codes.each do |s|
-         s.size.should == 6
+         s.size.should == 8
         end
       end
     end
