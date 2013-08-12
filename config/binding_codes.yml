@@ -1,41 +1,70 @@
 #weight [kg]
 #height [cm]
+#Code A
 - !ruby/object:SkiBinding::Code
   weight: !ruby/range 10..13
   height: !ruby/range 1..148
+#Code B
 - !ruby/object:SkiBinding::Code
   weight: !ruby/range 14..17
   height: !ruby/range 1..148
+#Code C
 - !ruby/object:SkiBinding::Code
   weight: !ruby/range 18..21
   height: !ruby/range 1..148
+#Code D
 - !ruby/object:SkiBinding::Code
   weight: !ruby/range 22..25
   height: !ruby/range 1..148
+#Code E
 - !ruby/object:SkiBinding::Code
   weight: !ruby/range 26..30
   height: !ruby/range 1..148
+#Code F
 - !ruby/object:SkiBinding::Code
   weight: !ruby/range 31..35
   height: !ruby/range 1..148
+#Code G
 - !ruby/object:SkiBinding::Code
   weight: !ruby/range 36..41
   height: !ruby/range 1..148
+#Code H
 - !ruby/object:SkiBinding::Code
   weight: !ruby/range 42..48
   height: !ruby/range 1..148
+#Code I
 - !ruby/object:SkiBinding::Code
   weight: !ruby/range 49..57
   height: !ruby/range 149..157
+#Code J
 - !ruby/object:SkiBinding::Code
   weight: !ruby/range 58..66
   height: !ruby/range 158..166
+#Code K
 - !ruby/object:SkiBinding::Code
   weight: !ruby/range 67..78
   height: !ruby/range 167..178
+#Code L
 - !ruby/object:SkiBinding::Code
   weight: !ruby/range 79..94
   height: !ruby/range 179..194
+#Code M
+- !ruby/object:SkiBinding::Code
+  weight: !ruby/range
+    begin: 95
+    end: .inf
+  height: !ruby/range
+    begin: 195
+    end: .inf
+#Code N
+- !ruby/object:SkiBinding::Code
+  weight: !ruby/range
+    begin: 95
+    end: .inf
+  height: !ruby/range
+    begin: 195
+    end: .inf
+#Code O
 - !ruby/object:SkiBinding::Code
   weight: !ruby/range
     begin: 95
