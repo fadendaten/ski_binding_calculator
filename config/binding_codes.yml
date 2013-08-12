@@ -56,19 +56,3 @@
   height: !ruby/range
     begin: 195
     end: .inf
-#Code N
-- !ruby/object:SkiBinding::Code
-  weight: !ruby/range
-    begin: 95
-    end: .inf
-  height: !ruby/range
-    begin: 195
-    end: .inf
-#Code O
-- !ruby/object:SkiBinding::Code
-  weight: !ruby/range
-    begin: 95
-    end: .inf
-  height: !ruby/range
-    begin: 195
-    end: .inf
