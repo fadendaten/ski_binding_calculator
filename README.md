@@ -3,7 +3,7 @@
 Calculates the z-value according to ISO 11088.
 
 ### Input & Measuring Units
-You can give the calculator a hash with the below specified attributes. The <pre>weight</pre>, <pre>height, and <pre>shoe_size</pre> can be given as string or float. <pre>birthday</pre> and <pre>type</pre> are strings. The measuring units of the attributes are as follows:
+You can give the calculator a hash with the below specified attributes. The <pre>weight</pre>, <pre>height</pre>, and <pre>shoe_size</pre> can be given as string or float. <pre>birthday</pre> and <pre>type</pre> are strings. The measuring units of the attributes are as follows:
  
 - type ["Type1-", "Type1", "Type2", "Type3", "Type3+"]
 - weight [kg]
