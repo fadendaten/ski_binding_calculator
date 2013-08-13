@@ -1,4 +1,5 @@
 #Ski Binding Value Calculator
+[![Gem Version](https://badge.fury.io/rb/ski_binding_calculator.png)](http://badge.fury.io/rb/ski_binding_calculator)
 
 Calculates the z-value according to ISO 11088.
 
