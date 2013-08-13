@@ -3,13 +3,13 @@
 Calculates the z-value according to ISO 11088.
 
 ### Input & Measuring Units
-You can give the calculator a hash with the below specified attributes. The <code>weight</code>, <code>height</code>, and <code>shoe_size</code> can be given as string or float. <code>birthday</code> and <code>type</code> are strings. The measuring units of the attributes are as follows:
+You can give the calculator a hash with the below specified attributes. The <code>weight</code>, <code>height</code>, and <code>shoe_size</code> can be given as string or float. <code>birthday</code> and <code>type</code> are strings. The measuring units and formats of the attributes are as follows:
  
-- <code>type</code> ["Type1-", "Type1", "Type2", "Type3", "Type3+"]
 - <code>weight</code> [kg]
 - <code>height</code> [cm]
 - <code>shoe_size</code> [mm]
-- <code>birthday</code> (format: yyyy-mm-dd)
+- <code>birthday</code> [yyyy-mm-dd]
+- <code>type</code> ["Type1-", "Type1", "Type2", "Type3", "Type3+"]
 
 ###Codes
 In ISO 11088 are so-called codes defined. We redefined those one letter codes as digits as follows:

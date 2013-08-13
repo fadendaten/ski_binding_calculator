@@ -22,6 +22,7 @@ GEM
       simplecov-html (~> 0.7.1)
     simplecov-html (0.7.1)
     spork (0.9.2)
+    timecop (0.6.3)
 
 PLATFORMS
   ruby
@@ -32,3 +33,4 @@ DEPENDENCIES
   simplecov (~> 0.7.1)
   ski_binding_calculator!
   spork (~> 0.9.2)
+  timecop (~> 0.6.3)

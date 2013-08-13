@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'timecop'
 
 describe SkiBinding::Calculator do
   before(:all) do
@@ -6,7 +7,9 @@ describe SkiBinding::Calculator do
              :weight => "70", 
              :height => "170", 
              :shoe_size => "315", 
-             :birthday => "1983-01-01"}                           
+             :birthday => "1983-01-01"}
+    #We freeze time so birthday will always be 30 years back
+    Timecop.freeze(2013, 8, 13)                       
   end
 
   describe "#new" do
@@ -117,5 +120,9 @@ describe SkiBinding::Calculator do
       SkiBinding::Calculator.setting(@hash).should == 
       {"z_value"=>6}
     end
+  end
+  
+  after(:all) do
+    Timecop.return
   end
 end

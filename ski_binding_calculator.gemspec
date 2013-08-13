@@ -14,6 +14,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency "rspec", "~> 2.14.1"
   s.add_development_dependency "spork", "~> 0.9.2"
   s.add_development_dependency "simplecov", "~> 0.7.1"
+  s.add_development_dependency "timecop", "~> 0.6.3"
 
   s.files =  Dir.glob("{config,lib,spec}/**/*")
   s.files += %w(Rakefile ski_binding_calculator.gemspec)
