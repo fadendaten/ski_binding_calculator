@@ -3,7 +3,7 @@ require 'spec_helper'
 describe "ConfigLoader" do 
 
   before(:all) do
-    @range = 0..14 #cause 15 codes
+    @range = 0..15 #cause 16 settings
     @dummy_class = DummyClass.new
     @dummy_class.extend(SkiBinding::ConfigLoader)
   end
@@ -27,7 +27,7 @@ describe "ConfigLoader" do
       end
       
       it "has 15 codes" do
-        @codes.size.should == 15
+        @codes.size.should == 13
       end
     end
   end
