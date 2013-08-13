@@ -1,15 +1,15 @@
 #Ski Binding Value Calculator
 
-Calculate the z-value, forward-pressure and turning moment according to ISO 11088.
+Calculates the z-value according to ISO 11088.
 
-### Measuring Units
-You can give the caluclator a person. The units for the attributes of a person are as follows:
+### Input & Measuring Units
+You can give the calculator a hash with the below specified attributes. The <pre>weight</pre>, <pre>height, and <pre>shoe_size</pre> can be given as string or float. <pre>birthday</pre> and <pre>type</pre> are strings. The measuring units of the attributes are as follows:
  
 - type ["Type1-", "Type1", "Type2", "Type3", "Type3+"]
 - weight [kg]
 - height [cm]
 - shoe size [mm]
-- age [yr] 
+- birthday (format: yyyy-mm-dd)
 
 ###Codes
 In ISO 11088 are so-called codes defined. We redefined those one letter codes as digits as follows:
@@ -28,5 +28,6 @@ In ISO 11088 are so-called codes defined. We redefined those one letter codes as
 - M => 12
 - N => 13
 - O => 14
+- P => 15
 
 Therefore we can see the codes as array indexes in our yaml files.
