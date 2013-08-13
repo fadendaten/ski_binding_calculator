@@ -87,11 +87,11 @@ describe SkiBinding::Calculator do
       SkiBinding::Calculator.binding_code(@type_validated_hash).should == 0
     end
     
-    it "raises argumentError if invalid settings" do
+    it "raises argumentError if no code was found" do
       @type_validated_hash[:weight] = -1
       @type_validated_hash[:height] = -1
       expect { SkiBinding::Calculator.binding_code(@type_validated_hash) }
-      .to raise_error(ArgumentError, "You have entered an invalid combination of settings.")
+      .to raise_error(ArgumentError, "You have entered invalid weight and/or height")
     end
     
     context "returns code one less if age >= 50 || age < 10" do

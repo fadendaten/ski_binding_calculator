@@ -66,7 +66,7 @@ class SkiBinding::Calculator
         end
       end
       if code == -1 
-        raise ArgumentError, "You have entered an invalid combination of settings."
+        raise ArgumentError, "You have entered invalid weight and/or height"
       end
       unless attrs[:weight] < 13
         code += attrs[:type]
