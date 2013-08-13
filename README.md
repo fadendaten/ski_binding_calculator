@@ -30,4 +30,4 @@ In ISO 11088 are so-called codes defined. We redefined those one letter codes as
 - O => 14
 - P => 15
 
-Therefore we can see the codes as array indexes in our yaml files.
+Therefore we can use the codes as array indexes in our yaml files.
