@@ -15,6 +15,9 @@ class SkiBinding::Calculator
     def self.prep_attributes(attrs)
       hashy = {}
       hashy[:weight] = attrs[:weight].to_f || attrs["weight"].to_f
+      if hashy[:weight] < 10
+        raise ArgumentError, "Weight must be at least 10kg"
+      end
       hashy[:height] = attrs[:height].to_f || attrs["height"].to_f
       hashy[:shoe_size] = attrs[:shoe_size].to_f || attrs["shoe_size"].to_f
       hashy[:birthday] = attrs[:birthday] || attrs["birthdate"]
@@ -39,16 +42,31 @@ class SkiBinding::Calculator
       types = {"Type1-" => -1, "Type1" => 0, "Type2" => 1, 
                "Type3" => 2, "Type3+" => 3}
       keys = types.keys
-      attrs[:type] = types[type_string] if keys.include?(type_string)
+      if keys.include?(type_string)
+        attrs[:type] = types[type_string]
+      else
+        raise ArgumentError, "You have entered an invalid type."
+      end
       attrs
     end
       
     def self.binding_code(attrs)
       code = -1
       self.load_binding_codes.each_with_index do |c,i|
-        code = i
-        break if c.weight.include?(attrs[:weight]) || 
-                 c.height.include?(attrs[:height])
+        if c.height.nil?
+          if c.weight.include?(attrs[:weight])
+            code = i
+            break
+          end
+        else
+          if c.weight.include?(attrs[:weight]) || c.height.include?(attrs[:height])
+            code = i
+            break
+          end
+        end
+      end
+      if code == -1 
+        raise ArgumentError, "You have entered an invalid combination of settings."
       end
       unless attrs[:weight] < 13
         code += attrs[:type]
@@ -63,7 +81,11 @@ class SkiBinding::Calculator
       settings = self.load_binding_settings(code)
       settings.each do |s|
         if s.shoe_size_range.include?(attrs[:shoe_size])
-          return {"z_value" => s.z_value}
+          unless s.z_value.nil?
+            return {"z_value" => s.z_value}
+          else
+            raise ArgumentError, "Please calculate z-index by hand."
+          end
         end
       end
     end

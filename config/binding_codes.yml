@@ -3,31 +3,31 @@
 #Code A
 - !ruby/object:SkiBinding::Code
   weight: !ruby/range 10..13
-  height: !ruby/range 1..148
+  height: ~
 #Code B
 - !ruby/object:SkiBinding::Code
   weight: !ruby/range 14..17
-  height: !ruby/range 1..148
+  height: ~
 #Code C
 - !ruby/object:SkiBinding::Code
   weight: !ruby/range 18..21
-  height: !ruby/range 1..148
+  height: ~
 #Code D
 - !ruby/object:SkiBinding::Code
   weight: !ruby/range 22..25
-  height: !ruby/range 1..148
+  height: ~
 #Code E
 - !ruby/object:SkiBinding::Code
   weight: !ruby/range 26..30
-  height: !ruby/range 1..148
+  height: ~
 #Code F
 - !ruby/object:SkiBinding::Code
   weight: !ruby/range 31..35
-  height: !ruby/range 1..148
+  height: ~
 #Code G
 - !ruby/object:SkiBinding::Code
   weight: !ruby/range 36..41
-  height: !ruby/range 1..148
+  height: ~
 #Code H
 - !ruby/object:SkiBinding::Code
   weight: !ruby/range 42..48

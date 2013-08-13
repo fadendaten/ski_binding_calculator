@@ -7,9 +7,9 @@ describe SkiBinding::Calculator do
              :weight => "70", 
              :height => "170", 
              :shoe_size => "315", 
-             :birthday => "1983-01-01"}
+             :birthday => "1983-01-01"}  
     #We freeze time so birthday will always be 30 years back
-    Timecop.freeze(2013, 8, 13)                       
+    Timecop.freeze(2013, 8, 13)                  
   end
 
   describe "#new" do
@@ -27,10 +27,17 @@ describe SkiBinding::Calculator do
                        :birthday => "1983-01-01"}
       SkiBinding::Calculator.prep_attributes(@hash).should == expected_hash
     end
+    
+    it "returns argument error if weight < 10kg" do
+      @hash[:weight] = "9"
+      expect { SkiBinding::Calculator.prep_attributes(@hash) }
+      .to raise_error(ArgumentError, "Weight must be at least 10kg")
+      @hash[:weight] = "70"
+    end
   end
   
   describe "#age" do
-    before :all do
+    before(:all) do
       @preped_hash = SkiBinding::Calculator.prep_attributes(@hash)
     end
     
@@ -51,14 +58,14 @@ describe SkiBinding::Calculator do
       result[:type].should == 1
     end
     
-    it "sets type \"unknown\" to nil" do
+    it "raises argument error on type \"unknown\"" do
       wrong_aged_hash = {:type => "unknown", 
                :weight => 70, 
                :height => 170, 
                :shoe_size => 315, 
                :age => 30}
-      result = SkiBinding::Calculator.validate_type(wrong_aged_hash)
-      result[:type].should == "unknown"
+      expect { SkiBinding::Calculator.validate_type(wrong_aged_hash) }
+      .to raise_error(ArgumentError, "You have entered an invalid type.")
     end
   end
      
@@ -78,6 +85,13 @@ describe SkiBinding::Calculator do
       # because we set "Type2" the code would be changed by 1
       @type_validated_hash[:weight] = 12 
       SkiBinding::Calculator.binding_code(@type_validated_hash).should == 0
+    end
+    
+    it "raises argumentError if invalid settings" do
+      @type_validated_hash[:weight] = -1
+      @type_validated_hash[:height] = -1
+      expect { SkiBinding::Calculator.binding_code(@type_validated_hash) }
+      .to raise_error(ArgumentError, "You have entered an invalid combination of settings.")
     end
     
     context "returns code one less if age >= 50 || age < 10" do
@@ -112,6 +126,11 @@ describe SkiBinding::Calculator do
     it "returns a valid setting" do
       SkiBinding::Calculator.binding_setting(@type_validated_hash, 11).should == 
       {"z_value"=>6}
+    end
+    
+    it "raises argument error if no settings found" do
+      expect { SkiBinding::Calculator.binding_setting(@type_validated_hash, 0) }
+      .to raise_error(ArgumentError, "Please calculate z-index by hand.")
     end
   end
   
