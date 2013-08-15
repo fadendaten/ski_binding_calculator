@@ -11,14 +11,18 @@ describe SkiBinding::Calculator do
      :weight => "70", 
      :height => "170", 
      :sole_length => "315", 
-     :birthday => "1983-01-01" }  
+     :birthday_year => "1983",
+     :birthday_month => "01",
+     :birthday_day => "01" }  
   end
   subject(:expected_preped) do
     { :type => "Type2", 
      :weight => 70.0, 
      :height => 170.0, 
      :sole_length => 315.0, 
-     :birthday => "1983-01-01" }  
+     :birthday_year => 1983,
+     :birthday_month => 1,
+     :birthday_day => 1 }  
   end
   subject(:expected_aged) do
     { :type => "Type2", 

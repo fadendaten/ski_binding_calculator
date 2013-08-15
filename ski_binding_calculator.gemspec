@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
 
   s.name        = 'ski_binding_calculator'
-  s.version     = '0.6.6'
+  s.version     = '0.6.7'
   s.summary     = "Ski Binding Calculator"
   s.description = "Calculates the z-value according to ISO 11088."
   s.authors     = ["Jonas Ruef, Felix Langenegger"]

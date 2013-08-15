@@ -20,18 +20,22 @@ class SkiBinding::Calculator
       end
       hashy[:height] = attrs[:height].to_f || attrs["height"].to_f
       hashy[:sole_length] = attrs[:sole_length].to_f || attrs["sole_length"].to_f
-      hashy[:birthday] = attrs[:birthday] || attrs["birthdate"]
+      hashy[:birthday_year] = attrs[:birthday_year].to_i || attrs["birthday_year"].to_i
+      hashy[:birthday_month] = attrs[:birthday_month].to_i || attrs["birthday_month"].to_i
+      hashy[:birthday_day] = attrs[:birthday_day].to_i || attrs["birthday_day"].to_i
       hashy[:type] = attrs[:type] || attrs["type"]
       hashy
     end
     
     def self.age(attrs)
-      birthday = Date.parse(attrs[:birthday])
+      birthday = Date.new(attrs[:birthday_year], attrs[:birthday_month], attrs[:birthday_day])
       now = Date.today
       age = now.year - birthday.year
       age -= ((now.month > birthday.month || 
              (now.month == birthday.month && now.day >= birthday.day)) ? 0 : 1)
-      attrs.delete(:birthday)
+      attrs.delete(:birthday_year)
+      attrs.delete(:birthday_month)
+      attrs.delete(:birthday_day)
       attrs[:age] = age
       attrs
     end
