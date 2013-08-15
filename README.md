@@ -4,12 +4,14 @@
 Calculates the z-value according to ISO 11088.
 
 ### Input & Measuring Units
-You can give the calculator a hash with the below specified attributes. The <code>weight</code>, <code>height</code>, and <code>shoe_size</code> can be given as strings or floats. <code>birthday</code> and <code>type</code> must be strings. The measuring units and formats of the attributes are as follows:
+You can give the calculator a hash with the below specified attributes. The <code>weight</code>, <code>height</code>, and <code>shoe_size</code> can be given as strings or floats. <code>birthday_year</code>, <code>birthday_month</code>, and <code>birthday_day</code> can be strings or integer and <code>type</code> must be a string. The measuring units and formats of the attributes are as follows:
  
 - <code>weight</code> [kg]
 - <code>height</code> [cm]
 - <code>shoe_size</code> [mm]
-- <code>birthday</code> [yyyy-mm-dd]
+- <code>birthday_year</code> [yyyy]
+- <code>birthday_month</code> [mm]
+- <code>birthday_day</code> [dd]
 - <code>type</code> ["Type1-", "Type1", "Type2", "Type3", "Type3+"]
 
 ###Codes
