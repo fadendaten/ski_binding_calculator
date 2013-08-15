@@ -7,18 +7,9 @@ describe SkiBinding::Code do
     end
   end
     
-  context "instantiated Code class" do
-    before :all do
-      @code = SkiBinding::Code.new
-    end
-    
-    it "has attribute weight" do
-      @code.should respond_to :weight
-    end
-    
-    it "has attribute heigth" do
-      @code.should respond_to :height
-    end
+  context "when instantiated Code class" do
+    it { should respond_to :weight }
+    it { should respond_to :height }
   end
 end
 

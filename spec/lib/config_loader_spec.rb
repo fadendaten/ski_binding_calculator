@@ -1,69 +1,33 @@
 require 'spec_helper'
 
+# For original table with codes referred to in this tests see iso 11088 
+# Table B.1
 describe "ConfigLoader" do 
-
-  before(:all) do
-    @range = 0..15 #cause 16 settings
-    @dummy_class = DummyClass.new
-    @dummy_class.extend(SkiBinding::ConfigLoader)
-  end
+  subject(:dummy_class) { DummyClass.new.extend(SkiBinding::ConfigLoader) }
 
   describe "loading binding codes:" do
-    it "something gets loaded" do
-      @dummy_class.load_binding_codes.class.should_not == nil
-    end
+    it { dummy_class.load_binding_codes.class.should_not == nil }
     
-    context "loaded codes" do
-      before :all do
-        @codes = @dummy_class.load_binding_codes
-      end
+    context "when loaded codes" do
+      subject(:codes) { dummy_class.load_binding_codes }
       
-      it "is array" do
-        @codes.class.should == Array
-      end
-      
-      it "first element is code" do
-        @codes[0].class.should == SkiBinding::Code
-      end
-      
-      it "has 15 codes" do
-        @codes.size.should == 13
-      end
+      it{ codes.class.should == Array }
+      it{ codes[0].class.should == SkiBinding::Code }
+      it{ codes.size.should == 13 }
     end
   end
   
   describe "loading binding settings for all codes" do
-    it "something gets loaded" do
-      @range.each do |index|
-        @dummy_class.load_binding_settings(index).class.should_not == nil
-      end
+    subject(:settings_all_codes) do
+      settings = []
+      (0..15).each { |i| settings << dummy_class.load_binding_settings(i) }
+      settings
     end
     
-    context "loaded settings for each code" do
-      before :all do
-        @settings_all_codes = []
-        @range.each do |index|
-          @settings_all_codes << @dummy_class.load_binding_settings(index)
-        end
-      end
-      
-      it "is array" do
-        @settings_all_codes.each do |s|
-          s.class.should == Array
-        end
-      end
-      
-      it "first element is setting" do
-        @settings_all_codes.each do |s|
-          s[0].class.should == SkiBinding::Setting
-        end
-      end
-      
-      it "has 6 settings" do
-        @settings_all_codes.each do |s|
-         s.size.should == 8
-        end
-      end
+    context "for each code" do
+      it { settings_all_codes.each { |s| s.class.should == Array } }
+      it { settings_all_codes.each { |s| s[0].class.should == SkiBinding::Setting } }
+      it { settings_all_codes.each { |s| s.size.should == 8 } }
     end
   end
 end

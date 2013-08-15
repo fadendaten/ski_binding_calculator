@@ -22,8 +22,7 @@ class SkiBinding::Calculator
       hashy[:shoe_size] = attrs[:shoe_size].to_f || attrs["shoe_size"].to_f
       hashy[:birthday] = attrs[:birthday] || attrs["birthdate"]
       hashy[:type] = attrs[:type] || attrs["type"]
-      attrs = hashy
-      attrs
+      hashy
     end
     
     def self.age(attrs)
@@ -82,7 +81,7 @@ class SkiBinding::Calculator
       settings.each do |s|
         if s.shoe_size_range.include?(attrs[:shoe_size])
           unless s.z_value.nil?
-            return {"z_value" => s.z_value}
+            return {:z_value => s.z_value}
           else
             raise ArgumentError, "Please calculate z-index by hand."
           end

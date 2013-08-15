@@ -7,25 +7,10 @@ describe SkiBinding::Setting do
     end
   end
     
-  context "instantiated Setting class" do
-    before :all do
-      @setting = SkiBinding::Setting.new
-    end
-    
-    it "has attribute shoe_size_range" do
-      @setting.should respond_to :shoe_size_range
-    end
-    
-    it "has attribute z_value" do
-      @setting.should respond_to :z_value
-    end
-    
-    it "has attribute twist" do
-      @setting.should respond_to :twist
-    end
-    
-    it "has attribute forward_lean" do
-      @setting.should respond_to :forward_lean
-    end
+  context "when instantiated Setting class" do
+    it { should respond_to :shoe_size_range }
+    it { should respond_to :z_value }
+    it { should respond_to :twist }
+    it { should respond_to :forward_lean }
   end
 end
