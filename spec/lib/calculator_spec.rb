@@ -15,6 +15,15 @@ describe SkiBinding::Calculator do
      :birthday_month => "01",
      :birthday_day => "01" }  
   end
+  subject(:skiers_parameters_string_keys) do
+    { "type" => "Type2", 
+     "weight" => "70", 
+     "height" => "170", 
+     "sole_length" => "315", 
+     "birthday_year" => "1983",
+     "birthday_month" => "01",
+     "birthday_day" => "01" }  
+  end
   subject(:expected_preped) do
     { :type => "Type2", 
      :weight => 70.0, 
@@ -57,6 +66,11 @@ describe SkiBinding::Calculator do
     let(:parameters) { skiers_parameters }
     
     it { calculated_preped.should == expected_preped }
+    
+    context "when hash keys are strings" do
+      let(:parameters) { skiers_parameters_string_keys}
+      it { calculated_preped.should == expected_preped }
+    end
     
     context "when weight < 10kg" do
       let(:parameters) do

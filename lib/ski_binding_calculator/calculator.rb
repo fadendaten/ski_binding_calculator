@@ -1,4 +1,5 @@
 require 'ski_binding_calculator/config_loader'
+require 'active_support/core_ext/hash/indifferent_access'
 
 class SkiBinding::Calculator 
   extend SkiBinding::ConfigLoader
@@ -13,17 +14,18 @@ class SkiBinding::Calculator
   
   private
     def self.prep_attributes(attrs)
+      attrs = attrs.with_indifferent_access
       hashy = {}
-      hashy[:weight] = attrs[:weight].to_f || attrs["weight"].to_f
-      if hashy[:weight] < 10
+      hashy[:weight] = attrs[:weight].to_f
+      if hashy[:weight] < 10.0
         raise ArgumentError, "Weight must be at least 10kg"
       end
-      hashy[:height] = attrs[:height].to_f || attrs["height"].to_f
-      hashy[:sole_length] = attrs[:sole_length].to_f || attrs["sole_length"].to_f
-      hashy[:birthday_year] = attrs[:birthday_year].to_i || attrs["birthday_year"].to_i
-      hashy[:birthday_month] = attrs[:birthday_month].to_i || attrs["birthday_month"].to_i
-      hashy[:birthday_day] = attrs[:birthday_day].to_i || attrs["birthday_day"].to_i
-      hashy[:type] = attrs[:type] || attrs["type"]
+      hashy[:height] = attrs[:height].to_f
+      hashy[:sole_length] = attrs[:sole_length].to_f
+      hashy[:birthday_year] = attrs[:birthday_year].to_i 
+      hashy[:birthday_month] = attrs[:birthday_month].to_i 
+      hashy[:birthday_day] = attrs[:birthday_day].to_i
+      hashy[:type] = attrs[:type]
       hashy
     end
     
