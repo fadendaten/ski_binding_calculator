@@ -3,42 +3,42 @@
 # forward_lean [Nm]
 -
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 1..230
+    sole_length_range: !ruby/range 1..230
     z_value: 0.75
     twist: &turning_moment 8
     forward_lean: &forward_lean 29
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 231..250
+    sole_length_range: !ruby/range 231..250
     z_value: 0.75
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 251..270
+    sole_length_range: !ruby/range 251..270
     z_value: 0.75
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 271..290
+    sole_length_range: !ruby/range 271..290
     z_value: ~
     twist: ~
     forward_lean: ~
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 291..310
+    sole_length_range: !ruby/range 291..310
     z_value: ~
     twist: ~
     forward_lean: ~
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 311..330
+    sole_length_range: !ruby/range 311..330
     z_value: ~
     twist: ~
     forward_lean: ~
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 331..350
+    sole_length_range: !ruby/range 331..350
     z_value: ~
     twist: ~
     forward_lean: ~
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range
+    sole_length_range: !ruby/range
       begin: 351
       end: .inf
     z_value: ~
@@ -46,42 +46,42 @@
     forward_lean: ~
 -
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 1..230
+    sole_length_range: !ruby/range 1..230
     z_value: 1.0
     twist: &turning_moment 11
     forward_lean: &forward_lean 40
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 231..250
+    sole_length_range: !ruby/range 231..250
     z_value: 0.75
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 251..270
+    sole_length_range: !ruby/range 251..270
     z_value: 0.75
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 271..290
+    sole_length_range: !ruby/range 271..290
     z_value: 0.75
     twist: *turning_moment
     forward_lean:  *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 291..310
+    sole_length_range: !ruby/range 291..310
     z_value: ~
     twist: ~
     forward_lean: ~
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 311..330
+    sole_length_range: !ruby/range 311..330
     z_value: ~
     twist: ~
     forward_lean: ~
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 331..350
+    sole_length_range: !ruby/range 331..350
     z_value: ~
     twist: ~
     forward_lean: ~
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range
+    sole_length_range: !ruby/range
       begin: 351
       end: .inf
     z_value: ~
@@ -89,42 +89,42 @@
     forward_lean: ~
 -
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 1..230
+    sole_length_range: !ruby/range 1..230
     z_value: 1.5
     twist: &turning_moment 14
     forward_lean: &forward_lean 52
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 231..250
+    sole_length_range: !ruby/range 231..250
     z_value: 1.25
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 251..270
+    sole_length_range: !ruby/range 251..270
     z_value: 1.25
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 271..290
+    sole_length_range: !ruby/range 271..290
     z_value: 1.0
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 291..310
+    sole_length_range: !ruby/range 291..310
     z_value: ~
     twist: ~
     forward_lean: ~
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 311..330
+    sole_length_range: !ruby/range 311..330
     z_value: ~
     twist: ~
     forward_lean: ~
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 331..350
+    sole_length_range: !ruby/range 331..350
     z_value: ~
     twist: ~
     forward_lean: ~
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range
+    sole_length_range: !ruby/range
       begin: 351
       end: .inf
     z_value: ~
@@ -132,42 +132,42 @@
     forward_lean: ~
 -
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 1..230
+    sole_length_range: !ruby/range 1..230
     z_value: 2.0
     twist: &turning_moment 17
     forward_lean: &forward_lean 64
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 231..250
+    sole_length_range: !ruby/range 231..250
     z_value: 1.75
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 251..270
+    sole_length_range: !ruby/range 251..270
     z_value: 1.5
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 271..290
+    sole_length_range: !ruby/range 271..290
     z_value: 1.5
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 291..310
+    sole_length_range: !ruby/range 291..310
     z_value: 1.25
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 311..330
+    sole_length_range: !ruby/range 311..330
     z_value: ~
     twist: ~
     forward_lean: ~
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 331..350
+    sole_length_range: !ruby/range 331..350
     z_value: ~
     twist: ~
     forward_lean: ~
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range
+    sole_length_range: !ruby/range
       begin: 351
       end: .inf
     z_value: ~
@@ -175,42 +175,42 @@
     forward_lean: ~
 -
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 1..230
+    sole_length_range: !ruby/range 1..230
     z_value: 2.5
     twist: &turning_moment 20
     forward_lean: &forward_lean 75
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 231..250
+    sole_length_range: !ruby/range 231..250
     z_value: 2.25
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 251..270
+    sole_length_range: !ruby/range 251..270
     z_value: 2.0
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 271..290
+    sole_length_range: !ruby/range 271..290
     z_value: 1.75
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 291..310
+    sole_length_range: !ruby/range 291..310
     z_value: 1.5
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 311..330
+    sole_length_range: !ruby/range 311..330
     z_value: 1.5
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 331..350
+    sole_length_range: !ruby/range 331..350
     z_value: ~
     twist: ~
     forward_lean: ~
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range
+    sole_length_range: !ruby/range
       begin: 351
       end: .inf
     z_value: ~
@@ -218,42 +218,42 @@
     forward_lean: ~
 -
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 1..230
+    sole_length_range: !ruby/range 1..230
     z_value: 3.0
     twist: &turning_moment 23
     forward_lean: &forward_lean 87
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 231..250
+    sole_length_range: !ruby/range 231..250
     z_value: 2.75
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 251..270
+    sole_length_range: !ruby/range 251..270
     z_value: 2.5
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 271..290
+    sole_length_range: !ruby/range 271..290
     z_value: 2.25
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 291..310
+    sole_length_range: !ruby/range 291..310
     z_value: 2.0
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 311..330
+    sole_length_range: !ruby/range 311..330
     z_value: 1.75
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 331..350
+    sole_length_range: !ruby/range 331..350
     z_value: 1.75
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range
+    sole_length_range: !ruby/range
       begin: 351
       end: .inf
     z_value: ~
@@ -261,42 +261,42 @@
     forward_lean: ~
 -
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 1..230
+    sole_length_range: !ruby/range 1..230
     z_value: ~
     twist: ~
     forward_lean: ~
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 231..250
+    sole_length_range: !ruby/range 231..250
     z_value: 3.5
     twist: &turning_moment 27
     forward_lean: &forward_lean 102
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 251..270
+    sole_length_range: !ruby/range 251..270
     z_value: 3.0
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 271..290
+    sole_length_range: !ruby/range 271..290
     z_value: 2.75
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 291..310
+    sole_length_range: !ruby/range 291..310
     z_value: 2.5
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 311..330
+    sole_length_range: !ruby/range 311..330
     z_value: 2.25
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 331..350
+    sole_length_range: !ruby/range 331..350
     z_value: 2.0
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range
+    sole_length_range: !ruby/range
       begin: 351
       end: .inf
     z_value: ~
@@ -304,42 +304,42 @@
     forward_lean: ~
 -
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 1..230
+    sole_length_range: !ruby/range 1..230
     z_value: ~
     twist: ~
     forward_lean: ~
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 231..250
+    sole_length_range: !ruby/range 231..250
     z_value: ~
     twist: ~
     forward_lean: ~
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 251..270
+    sole_length_range: !ruby/range 251..270
     z_value: 3.5
     twist: &turning_moment 27
     forward_lean: &forward_lean 102
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 271..290
+    sole_length_range: !ruby/range 271..290
     z_value: 3.0
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 291..310
+    sole_length_range: !ruby/range 291..310
     z_value: 3.0
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 311..330
+    sole_length_range: !ruby/range 311..330
     z_value: 2.75
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 331..350
+    sole_length_range: !ruby/range 331..350
     z_value: 2.5
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range
+    sole_length_range: !ruby/range
       begin: 351
       end: .inf
     z_value: ~
@@ -347,42 +347,42 @@
     forward_lean: ~
 -
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 1..230
+    sole_length_range: !ruby/range 1..230
     z_value: ~
     twist: ~
     forward_lean: ~
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 231..250
+    sole_length_range: !ruby/range 231..250
     z_value: ~
     twist: ~
     forward_lean: ~
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 251..270
+    sole_length_range: !ruby/range 251..270
     z_value: 4.5
     twist: &turning_moment 37
     forward_lean: &forward_lean 141
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 271..290
+    sole_length_range: !ruby/range 271..290
     z_value: 4.0
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 291..310
+    sole_length_range: !ruby/range 291..310
     z_value: 3.5
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 311..330
+    sole_length_range: !ruby/range 311..330
     z_value: 3.5
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 331..350
+    sole_length_range: !ruby/range 331..350
     z_value: 3.0
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range
+    sole_length_range: !ruby/range
       begin: 351
       end: .inf
     z_value: ~
@@ -390,42 +390,42 @@
     forward_lean: ~
 -
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 1..230
+    sole_length_range: !ruby/range 1..230
     z_value: ~
     twist: ~
     forward_lean: ~
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 231..250
+    sole_length_range: !ruby/range 231..250
     z_value: ~
     twist: ~
     forward_lean: ~
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 251..270
+    sole_length_range: !ruby/range 251..270
     z_value: 5.5
     twist: &turning_moment 43
     forward_lean: &forward_lean 165
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 271..290
+    sole_length_range: !ruby/range 271..290
     z_value: 5.0
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 291..310
+    sole_length_range: !ruby/range 291..310
     z_value: 4.5
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 311..330
+    sole_length_range: !ruby/range 311..330
     z_value: 4.0
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 331..350
+    sole_length_range: !ruby/range 331..350
     z_value: 3.5
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range
+    sole_length_range: !ruby/range
       begin: 351
       end: .inf
     z_value: 3.0
@@ -433,42 +433,42 @@
     forward_lean: *forward_lean
 -
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 1..230
+    sole_length_range: !ruby/range 1..230
     z_value: ~
     twist: ~
     forward_lean: ~
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 231..250
+    sole_length_range: !ruby/range 231..250
     z_value: ~
     twist: ~
     forward_lean: ~
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 251..270
+    sole_length_range: !ruby/range 251..270
     z_value: 6.5
     twist: &turning_moment 50
     forward_lean: &forward_lean 194
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 271..290
+    sole_length_range: !ruby/range 271..290
     z_value: 6.0
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 291..310
+    sole_length_range: !ruby/range 291..310
     z_value: 5.5
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 311..330
+    sole_length_range: !ruby/range 311..330
     z_value: 5.0
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 331..350
+    sole_length_range: !ruby/range 331..350
     z_value: 4.5
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range
+    sole_length_range: !ruby/range
       begin: 351
       end: .inf
     z_value: 4.0
@@ -476,42 +476,42 @@
     forward_lean: *forward_lean
 -
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 1..230
+    sole_length_range: !ruby/range 1..230
     z_value: ~
     twist: ~
     forward_lean: ~
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 231..250
+    sole_length_range: !ruby/range 231..250
     z_value: ~
     twist: ~
     forward_lean: ~
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 251..270
+    sole_length_range: !ruby/range 251..270
     z_value: 7.5
     twist: &turning_moment 58
     forward_lean: &forward_lean 229
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 271..290
+    sole_length_range: !ruby/range 271..290
     z_value: 7.0
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 291..310
+    sole_length_range: !ruby/range 291..310
     z_value: 6.5
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 311..330
+    sole_length_range: !ruby/range 311..330
     z_value: 6.0
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 331..350
+    sole_length_range: !ruby/range 331..350
     z_value: 5.5
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range
+    sole_length_range: !ruby/range
       begin: 351
       end: .inf
     z_value: 5.0
@@ -519,42 +519,42 @@
     forward_lean: *forward_lean
 -
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 1..230
+    sole_length_range: !ruby/range 1..230
     z_value: ~
     twist: ~
     forward_lean: ~
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 231..250
+    sole_length_range: !ruby/range 231..250
     z_value: ~
     twist: ~
     forward_lean: ~
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 251..270
+    sole_length_range: !ruby/range 251..270
     z_value: ~
     twist: ~
     forward_lean: ~
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 271..290
+    sole_length_range: !ruby/range 271..290
     z_value: 8.5
     twist: &turning_moment 67
     forward_lean: &forward_lean 271
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 291..310
+    sole_length_range: !ruby/range 291..310
     z_value: 8.0
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 311..330
+    sole_length_range: !ruby/range 311..330
     z_value: 7.0
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 331..350
+    sole_length_range: !ruby/range 331..350
     z_value: 6.5
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range
+    sole_length_range: !ruby/range
       begin: 351
       end: .inf
     z_value: 6.0
@@ -562,42 +562,42 @@
     forward_lean: *forward_lean
 -
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 1..230
+    sole_length_range: !ruby/range 1..230
     z_value: ~
     twist: ~
     forward_lean: ~
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 231..250
+    sole_length_range: !ruby/range 231..250
     z_value: ~
     twist: ~
     forward_lean: ~
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 251..270
+    sole_length_range: !ruby/range 251..270
     z_value: ~
     twist: ~
     forward_lean: ~
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 271..290
+    sole_length_range: !ruby/range 271..290
     z_value: 10.0
     twist: &turning_moment 78
     forward_lean: &forward_lean 320
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 291..310
+    sole_length_range: !ruby/range 291..310
     z_value: 9.5
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 311..330
+    sole_length_range: !ruby/range 311..330
     z_value: 8.5
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 331..350
+    sole_length_range: !ruby/range 331..350
     z_value: 8.0
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range
+    sole_length_range: !ruby/range
       begin: 351
       end: .inf
     z_value: 7.5
@@ -605,42 +605,42 @@
     forward_lean: *forward_lean
 -
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 1..230
+    sole_length_range: !ruby/range 1..230
     z_value: ~
     twist: ~
     forward_lean: ~
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 231..250
+    sole_length_range: !ruby/range 231..250
     z_value: ~
     twist: ~
     forward_lean: ~
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 251..270
+    sole_length_range: !ruby/range 251..270
     z_value: ~
     twist: ~
     forward_lean: ~
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 271..290
+    sole_length_range: !ruby/range 271..290
     z_value: 11.5
     twist: &turning_moment 91
     forward_lean: &forward_lean 380
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 291..310
+    sole_length_range: !ruby/range 291..310
     z_value: 11.0
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 311..330
+    sole_length_range: !ruby/range 311..330
     z_value: 10.0
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 331..350
+    sole_length_range: !ruby/range 331..350
     z_value: 9.5
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range
+    sole_length_range: !ruby/range
       begin: 351
       end: .inf
     z_value: 9.0
@@ -648,42 +648,42 @@
     forward_lean: *forward_lean
 -
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 1..230
+    sole_length_range: !ruby/range 1..230
     z_value: ~
     twist: ~
     forward_lean: ~
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 231..250
+    sole_length_range: !ruby/range 231..250
     z_value: ~
     twist: ~
     forward_lean: ~
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 251..270
+    sole_length_range: !ruby/range 251..270
     z_value: ~
     twist: ~
     forward_lean: ~
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 271..290
+    sole_length_range: !ruby/range 271..290
     z_value: ~
     twist: ~
     forward_lean: ~
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 291..310
+    sole_length_range: !ruby/range 291..310
     z_value: ~
     twist: ~
     forward_lean: ~
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 311..330
+    sole_length_range: !ruby/range 311..330
     z_value: 12.0
     twist: &turning_moment 105
     forward_lean: &forward_lean 452
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range 331..350
+    sole_length_range: !ruby/range 331..350
     z_value: 11.0
     twist: *turning_moment
     forward_lean: *forward_lean
   - !ruby/object:SkiBinding::Setting
-    shoe_size_range: !ruby/range
+    sole_length_range: !ruby/range
       begin: 351
       end: .inf
     z_value: 10.5

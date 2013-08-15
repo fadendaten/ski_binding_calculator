@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ski_binding_calculator (0.6.1)
+    ski_binding_calculator (0.6.5)
 
 GEM
   remote: https://rubygems.org/

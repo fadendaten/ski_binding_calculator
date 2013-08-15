@@ -19,7 +19,7 @@ class SkiBinding::Calculator
         raise ArgumentError, "Weight must be at least 10kg"
       end
       hashy[:height] = attrs[:height].to_f || attrs["height"].to_f
-      hashy[:shoe_size] = attrs[:shoe_size].to_f || attrs["shoe_size"].to_f
+      hashy[:sole_length] = attrs[:sole_length].to_f || attrs["sole_length"].to_f
       hashy[:birthday] = attrs[:birthday] || attrs["birthdate"]
       hashy[:type] = attrs[:type] || attrs["type"]
       hashy
@@ -79,7 +79,7 @@ class SkiBinding::Calculator
     def self.binding_setting(attrs, code)
       settings = self.load_binding_settings(code)
       settings.each do |s|
-        if s.shoe_size_range.include?(attrs[:shoe_size])
+        if s.sole_length_range.include?(attrs[:sole_length])
           unless s.z_value.nil?
             return {:z_value => s.z_value}
           else

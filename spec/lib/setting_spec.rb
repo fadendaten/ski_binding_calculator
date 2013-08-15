@@ -8,7 +8,7 @@ describe SkiBinding::Setting do
   end
     
   context "when instantiated Setting class" do
-    it { should respond_to :shoe_size_range }
+    it { should respond_to :sole_length_range }
     it { should respond_to :z_value }
     it { should respond_to :twist }
     it { should respond_to :forward_lean }

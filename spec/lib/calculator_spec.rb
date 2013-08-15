@@ -10,28 +10,28 @@ describe SkiBinding::Calculator do
     { :type => "Type2", 
      :weight => "70", 
      :height => "170", 
-     :shoe_size => "315", 
+     :sole_length => "315", 
      :birthday => "1983-01-01" }  
   end
   subject(:expected_preped) do
     { :type => "Type2", 
      :weight => 70.0, 
      :height => 170.0, 
-     :shoe_size => 315.0, 
+     :sole_length => 315.0, 
      :birthday => "1983-01-01" }  
   end
   subject(:expected_aged) do
     { :type => "Type2", 
      :weight => 70.0, 
      :height => 170.0, 
-     :shoe_size => 315.0, 
+     :sole_length => 315.0, 
      :age => 30 }  
   end
   subject(:expected_validated) do
     { :type => 1, 
      :weight => 70.0, 
      :height => 170.0, 
-     :shoe_size => 315.0, 
+     :sole_length => 315.0, 
      :age => 30 }  
   end
   subject(:expected_code) { 11 }
