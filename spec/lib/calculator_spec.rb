@@ -71,7 +71,7 @@ describe SkiBinding::Calculator do
     
     it "raise error with two messages" do
       expect { calculated_attr_validation }.to raise_error(SkiBinding::Error) { |e|
-        e.messages.should == {:weight => "weight is blank", :height => "height is blank"} } 
+        e.messages.should == { :weight => "is blank", :height => "is blank" } } 
     end
   end
   
@@ -91,8 +91,10 @@ describe SkiBinding::Calculator do
         skiers_parameters[:weight] = 9 
         skiers_parameters
       end
-      it { expect { calculated_preped }
-           .to raise_error(ArgumentError, "Weight must be at least 10kg") }
+      it "raise error" do
+          expect { calculated_preped }.to raise_error(SkiBinding::Error) { |e|
+            e.messages.should == { :weight => "is less than 10kg" } }
+      end
     end
   end
   
@@ -117,8 +119,10 @@ describe SkiBinding::Calculator do
         expected_aged
       end
       
-      it{ expect { calculated_validated }
-          .to raise_error(ArgumentError, "You have entered an invalid type.") }
+      it "raise error" do
+        expect { calculated_validated }.to raise_error(SkiBinding::Error) { |e|
+            e.messages.should == { :type => "You have entered an invalid type." } }
+      end
     end
   end
      
@@ -144,8 +148,10 @@ describe SkiBinding::Calculator do
         expected_validated
       end
       
-      it { expect { calculated_code }.
-           to raise_error(ArgumentError, "You have entered invalid weight and/or height") }
+      it "raises error" do 
+        expect { calculated_code }.to raise_error(SkiBinding::Error) { |e|
+            e.messages.should == { :base => "You have entered invalid weight and/or height" } }
+      end
     end
     
     context "when age >= 50 || age < 10" do             
@@ -187,8 +193,10 @@ describe SkiBinding::Calculator do
     
     context "when no setting found" do
       let(:binding_code) { 0 }
-      it{ expect { calculated_setting }
-          .to raise_error(ArgumentError, "Please calculate z-index by hand.") }
+      it "raise error" do
+        expect { calculated_setting }.to raise_error(SkiBinding::Error) { |e|
+            e.messages.should == { :base => "Please calculate z-index by hand." } }
+      end
     end
   end
  

@@ -18,27 +18,11 @@ class SkiBinding::Calculator
     def self.validate_attrs(attrs)
       attrs = attrs.with_indifferent_access
       error = SkiBinding::Error.new
-      
-      if attrs[:weight].blank?
-        error.add_message(*[:weight, "weight is blank"])
-      end
-      if attrs[:height].blank?
-        error.add_message(*[:height, "height is blank"])
-      end
-      if attrs[:sole_length].blank?
-        error.add_message(*[:sole_length, "sole length is blank"])
-      end
-      if attrs[:birthday_year].blank?
-        error.add_message(*[:birthday_year, "birthday year is blank"])
-      end
-      if attrs[:birthday_month].blank?
-        error.add_message(*[:birthday_month, "birthday month is blank"])
-      end
-      if attrs[:birthday_day].blank?
-        error.add_message(*[:birthday_day, "birthday day is blank"])
-      end
-      if attrs[:type].blank?
-        error.add_message(*[:type, "type is blank"])
+      attributes = [:weight, :height, :birthday_year, :birthday_month, :birthday_day, 
+                    :sole_length, :type]
+                    
+      attributes.each do |attr|
+        error.add_message(*[attr, "is blank"]) if attrs[attr].blank?
       end
       
       raise error unless error.messages.empty?
@@ -49,7 +33,7 @@ class SkiBinding::Calculator
       hashy = {}
       hashy[:weight] = attrs[:weight].to_f
       if hashy[:weight] < 10.0
-        raise ArgumentError, "Weight must be at least 10kg"
+        raise SkiBinding::Error.new(*[:weight, "is less than 10kg"])
       end
       hashy[:height] = attrs[:height].to_f
       hashy[:sole_length] = attrs[:sole_length].to_f
@@ -81,7 +65,7 @@ class SkiBinding::Calculator
       if keys.include?(type_string)
         attrs[:type] = types[type_string]
       else
-        raise ArgumentError, "You have entered an invalid type."
+        raise SkiBinding::Error.new(*[:type, "You have entered an invalid type."])
       end
       attrs
     end
@@ -102,7 +86,7 @@ class SkiBinding::Calculator
         end
       end
       if code == -1 
-        raise ArgumentError, "You have entered invalid weight and/or height"
+        raise SkiBinding::Error.new(*[:base, "You have entered invalid weight and/or height"])
       end
       unless attrs[:weight] < 13
         code += attrs[:type]
@@ -120,7 +104,7 @@ class SkiBinding::Calculator
           unless s.z_value.nil?
             return {:z_value => s.z_value}
           else
-            raise ArgumentError, "Please calculate z-index by hand."
+            raise SkiBinding::Error.new(*[:base, "Please calculate z-index by hand."])
           end
         end
       end

@@ -1,7 +1,11 @@
 class SkiBinding::Error < StandardError
   
-  def initialize
+  def initialize(key = nil, value = nil)
     @messages = {}
+    
+    if !key.nil? && !value.nil?
+      @messages[key] = value
+    end
   end
   
   def messages
