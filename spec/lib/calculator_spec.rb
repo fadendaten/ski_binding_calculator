@@ -70,12 +70,9 @@ describe SkiBinding::Calculator do
     end
     
     it "raise error with two messages" do
-      expect { calculated_attr_validation }.to raise_error(SkiBinding::Error) do |e|
-        e.message.should == {:weight => "weight is blank", :height => "height is blank"}
-      end 
+      expect { calculated_attr_validation }.to raise_error(SkiBinding::Error) { |e|
+        e.messages.should == {:weight => "weight is blank", :height => "height is blank"} } 
     end
-    #it { expect { calculated_attr_validation }
-    #     .to raise_error(ArgumentError, "height is blank") }
   end
   
   describe "#prep_attributes" do

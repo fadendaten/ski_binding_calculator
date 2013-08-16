@@ -21,17 +21,23 @@ class SkiBinding::Calculator
       
       if attrs[:weight].blank?
         error.add_message(*[:weight, "weight is blank"])
-      elsif attrs[:height].blank?
+      end
+      if attrs[:height].blank?
         error.add_message(*[:height, "height is blank"])
-      elsif attrs[:sole_length].blank?
+      end
+      if attrs[:sole_length].blank?
         error.add_message(*[:sole_length, "sole length is blank"])
-      elsif attrs[:birthday_year].blank?
+      end
+      if attrs[:birthday_year].blank?
         error.add_message(*[:birthday_year, "birthday year is blank"])
-      elsif attrs[:birthday_month].blank?
+      end
+      if attrs[:birthday_month].blank?
         error.add_message(*[:birthday_month, "birthday month is blank"])
-      elsif attrs[:birthday_day].blank?
+      end
+      if attrs[:birthday_day].blank?
         error.add_message(*[:birthday_day, "birthday day is blank"])
-      elsif attrs[:type].blank?
+      end
+      if attrs[:type].blank?
         error.add_message(*[:type, "type is blank"])
       end
       
