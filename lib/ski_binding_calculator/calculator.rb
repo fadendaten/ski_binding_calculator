@@ -1,10 +1,12 @@
 require 'ski_binding_calculator/config_loader'
 require 'active_support/core_ext/hash/indifferent_access'
+require 'active_support/core_ext/object/blank'
 
 class SkiBinding::Calculator 
   extend SkiBinding::ConfigLoader
   
   def self.setting(attrs)
+    self.validate_attrs(attrs)
     attrs = self.prep_attributes(attrs)
     attrs = self.age(attrs)
     attrs = self.validate_type(attrs)
@@ -13,6 +15,29 @@ class SkiBinding::Calculator
   end
   
   private
+    def self.validate_attrs(attrs)
+      attrs = attrs.with_indifferent_access
+      error = SkiBinding::Error.new
+      
+      if attrs[:weight].blank?
+        error.add_message(*[:weight, "weight is blank"])
+      elsif attrs[:height].blank?
+        error.add_message(*[:height, "height is blank"])
+      elsif attrs[:sole_length].blank?
+        error.add_message(*[:sole_length, "sole length is blank"])
+      elsif attrs[:birthday_year].blank?
+        error.add_message(*[:birthday_year, "birthday year is blank"])
+      elsif attrs[:birthday_month].blank?
+        error.add_message(*[:birthday_month, "birthday month is blank"])
+      elsif attrs[:birthday_day].blank?
+        error.add_message(*[:birthday_day, "birthday day is blank"])
+      elsif attrs[:type].blank?
+        error.add_message(*[:type, "type is blank"])
+      end
+      
+      raise error unless error.messages.empty?
+    end
+    
     def self.prep_attributes(attrs)
       attrs = attrs.with_indifferent_access
       hashy = {}

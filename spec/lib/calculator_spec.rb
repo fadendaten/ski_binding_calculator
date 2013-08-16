@@ -61,6 +61,23 @@ describe SkiBinding::Calculator do
     it { SkiBinding::Calculator.new.class.should == SkiBinding::Calculator }
   end
   
+  describe "#validate_attrs" do
+    subject(:calculated_attr_validation) { SkiBinding::Calculator.validate_attrs(parameters) }
+    let(:parameters) do
+      skiers_parameters[:weight] = ""
+      skiers_parameters[:height] = ""
+      skiers_parameters
+    end
+    
+    it "raise error with two messages" do
+      expect { calculated_attr_validation }.to raise_error(SkiBinding::Error) do |e|
+        e.message.should == {:weight => "weight is blank", :height => "height is blank"}
+      end 
+    end
+    #it { expect { calculated_attr_validation }
+    #     .to raise_error(ArgumentError, "height is blank") }
+  end
+  
   describe "#prep_attributes" do
     subject(:calculated_preped) { SkiBinding::Calculator.prep_attributes(parameters) }
     let(:parameters) { skiers_parameters }
