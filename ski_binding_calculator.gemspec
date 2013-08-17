@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.homepage    = 'http://fadendaten.ch'
   s.license     = 'MIT'
   
-  s.add_dependency "activesupport", "~> 4.0.0"
+  s.add_dependency "activesupport", ">= 3.2.13"
   s.add_development_dependency "rspec", "~> 2.14.1"
   s.add_development_dependency "spork", "~> 0.9.2"
   s.add_development_dependency "simplecov", "~> 0.7.1"
