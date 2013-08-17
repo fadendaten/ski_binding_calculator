@@ -7,11 +7,10 @@
 Calculates the initial indicator value (z-value) according to ISO 11088 standard.
 
 ## Installation
-
 Add to your Gemfile: <code>gem ski_binding_calculator</code>, run <code>$ bundle install</code>.
 
 ## Usage
-You can give the calculator a hash with the following key value pairs.
+You can give the calculator a hash with the following key value pairs:
 
 | key           | value          | 
 |:--------------|:---------------| 
@@ -25,8 +24,7 @@ You can give the calculator a hash with the following key value pairs.
 
 A key can be a <code>string</code> or <code>symbol</code>.
 
-## Measuring Units
-
+## Measuring Units & Formats
 The measuring units and formats of the attributes are as follows:
 
 | attribute     | unit  | 
@@ -42,13 +40,13 @@ The measuring units and formats of the attributes are as follows:
 ## Example
 Regarding the last two sections a hash could look like that:
 
-'''ruby
+```ruby
 { :type => "Type2", 
   :weight => "70", :height => "170", :sole_length => "315", :birthday_year => "1983", :birthday_month => "01", :birthday_day => "01" }
-'''
+```
 
 ## Codes
-In ISO 11088 Table B.1 are codes defined. We mapped the codes to digits as follows:
+In ISO 11088 table B.1 are codes defined. We map the codes to digits as follows:
 
 |code|digit|
 |:---|:----|
@@ -69,11 +67,10 @@ In ISO 11088 Table B.1 are codes defined. We mapped the codes to digits as follo
 | O  | 14  |
 | P  | 15  |
 
-The mappings we use as array indexes in the yaml files.
+The mappings allow us to use the codes as array indexes in the yaml files.
 
 ## Feedback
 If you have questions or suggestions don't hesitate open an issue.
 
 ## Copyright
-
 Copyright &copy; 2013 Fadendaten GmbH. See MIT-LICENSE for details.
