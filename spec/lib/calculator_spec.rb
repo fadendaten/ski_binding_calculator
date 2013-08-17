@@ -6,7 +6,7 @@ require 'timecop'
 # 315mm, and is born 01/01/1983 has code "L" or in our notation 11 
 # (see readme for details on codes). Furthermore it's z_value is 6.
 describe SkiBinding::Calculator do
-  subject(:skiers_parameters) do
+  let(:skiers_parameter) do
     { :type => "Type2", 
      :weight => "70", 
      :height => "170", 
@@ -15,7 +15,7 @@ describe SkiBinding::Calculator do
      :birthday_month => "01",
      :birthday_day => "01" }  
   end
-  subject(:skiers_parameters_string_keys) do
+  let(:skiers_parameter_string_keys) do
     { "type" => "Type2", 
      "weight" => "70", 
      "height" => "170", 
@@ -24,7 +24,7 @@ describe SkiBinding::Calculator do
      "birthday_month" => "01",
      "birthday_day" => "01" }  
   end
-  subject(:expected_preped) do
+  let(:expected_preped) do
     { :type => "Type2", 
      :weight => 70.0, 
      :height => 170.0, 
@@ -33,22 +33,22 @@ describe SkiBinding::Calculator do
      :birthday_month => 1,
      :birthday_day => 1 }  
   end
-  subject(:expected_aged) do
+  let(:expected_aged) do
     { :type => "Type2", 
      :weight => 70.0, 
      :height => 170.0, 
      :sole_length => 315.0, 
      :age => 30 }  
   end
-  subject(:expected_validated) do
+  let(:expected_type_validated) do
     { :type => 1, 
      :weight => 70.0, 
      :height => 170.0, 
      :sole_length => 315.0, 
      :age => 30 }  
   end
-  subject(:expected_code) { 11 }
-  subject(:expected_setting) do
+  let(:expected_code) { 11 }
+  let(:expected_setting) do
     { :z_value => 6 }
   end
   
@@ -56,155 +56,177 @@ describe SkiBinding::Calculator do
     #freeze time! so birthday will always be 30 years back
     Timecop.freeze(2013, 8, 13)                  
   end
-
-  describe "#new" do
-    it { SkiBinding::Calculator.new.class.should == SkiBinding::Calculator }
-  end
   
-  describe "#validate_attrs" do
-    subject(:calculated_attr_validation) { SkiBinding::Calculator.validate_attrs(parameters) }
-    let(:parameters) do
-      skiers_parameters[:weight] = ""
-      skiers_parameters[:height] = ""
-      skiers_parameters
-    end
+  describe ".validate_attrs" do
+    let(:calculated_validated) { SkiBinding::Calculator.validate_attrs(parameters) }
     
-    it "raise error with two messages" do
-      expect { calculated_attr_validation }.to raise_error(SkiBinding::Error) { |e|
-        e.messages.should == { :weight => "is blank", :height => "is blank" } } 
-    end
-  end
-  
-  describe "#prep_attributes" do
-    subject(:calculated_preped) { SkiBinding::Calculator.prep_attributes(parameters) }
-    let(:parameters) { skiers_parameters }
-    
-    it { calculated_preped.should == expected_preped }
-    
-    context "when hash keys are strings" do
-      let(:parameters) { skiers_parameters_string_keys}
-      it { calculated_preped.should == expected_preped }
-    end
-    
-    context "when weight < 10kg" do
+    context "when attributes are blank" do
       let(:parameters) do
-        skiers_parameters[:weight] = 9 
-        skiers_parameters
+        skiers_parameter[:weight] = ""
+        skiers_parameter[:height] = ""
+        skiers_parameter
       end
-      it "raise error" do
+      
+      it "raises SkiBinding::Error" do
+        expect { calculated_validated }.to raise_error(SkiBinding::Error)  { |e|
+              e.messages.should == { :weight => "is blank", :height => "is blank" } }
+      end
+    end 
+  end
+  
+  describe ".prep_attributes" do
+    let(:calculated_preped) { SkiBinding::Calculator.prep_attributes(parameters) }
+    
+    context "when input hash keys are symbols" do
+      let(:parameters) { skiers_parameter }
+      
+      it "calculates the expected preped hash" do
+        expect(calculated_preped).to eq(expected_preped)
+      end
+    end
+    
+    context "when input hash key are strings" do
+      let(:parameters) { skiers_parameter_string_keys}
+      
+      it "calculates the expected preped hash" do
+         expect(calculated_preped).to eq(expected_preped)
+      end
+    end
+    
+    context "when weight is less than 9kg" do
+      let(:parameters) do
+        skiers_parameter[:weight] = 9 
+        skiers_parameter
+      end
+      it "raises SkiBinding::Error" do
           expect { calculated_preped }.to raise_error(SkiBinding::Error) { |e|
             e.messages.should == { :weight => "is less than 10kg" } }
       end
     end
   end
   
-  describe "#age" do
-    subject(:calculated_aged) { SkiBinding::Calculator.age(preped) }
-    let(:preped) { expected_preped }
+  describe ".age" do
+    let(:calculated_aged) { SkiBinding::Calculator.age(expected_preped) }
     
-    it { calculated_aged.should == expected_aged }
+    it "replaces birthday by age" do
+      expect(calculated_aged).to eq(expected_aged)
+    end
   end
   
-  describe "#validate_type" do
-    subject(:calculated_validated) { SkiBinding::Calculator.validate_type(aged) }
+  describe ".validate_type" do
+    let(:calculated_type_validated) { SkiBinding::Calculator.validate_type(aged) }
     let(:aged) { expected_aged }
     
-    it "sets \"Type2\" to 1" do
-      calculated_validated.should == expected_validated
+    it "sets 'Type2' to 1" do
+      expect(calculated_type_validated[:type]).to eq(expected_type_validated[:type])
     end
     
-    context "when type is \"unknown\"" do
+    context "when type is 'unknown'" do
       let(:aged) do
         expected_aged[:type] = "unknown"
         expected_aged
       end
       
-      it "raise error" do
-        expect { calculated_validated }.to raise_error(SkiBinding::Error) { |e|
+      it "raises SkiBinding::Error" do
+        expect { calculated_type_validated }.to raise_error(SkiBinding::Error) { |e|
             e.messages.should == { :type => "You have entered an invalid type." } }
       end
     end
   end
      
-  describe "#binding_code" do
-    subject(:calculated_code) { SkiBinding::Calculator.binding_code(validated) }
-    let(:validated) { expected_validated }
+  describe ".binding_code" do
+    let(:calculated_code) { SkiBinding::Calculator.binding_code(validated) }
+    let(:validated) { expected_type_validated }
     
-    it{ calculated_code.should == 11 }
+    it "calculates the expected code" do
+      expect(calculated_code).to eq(11)
+    end
     
-    context "when weight < 13kg" do
+    context "when weight less than 13kg" do
       let(:validated) do
-        expected_validated[:weight] = 12
-        expected_validated
+        expected_type_validated[:weight] = 12
+        expected_type_validated
       end
+      
       #because "Type 2" is given the code would be changed to 1
-      it{ calculated_code.should == 0 }
+      it "code is unchanged" do
+        expect(calculated_code).to eq(0)
+      end
     end
     
     context "when no code found" do
       let(:validated) do 
-        expected_validated[:weight] = -1
-        expected_validated[:height] = -1
-        expected_validated
+        expected_type_validated[:weight] = -1
+        expected_type_validated[:height] = -1
+        expected_type_validated
       end
       
-      it "raises error" do 
+      it "raises SkiBinding::Error" do 
         expect { calculated_code }.to raise_error(SkiBinding::Error) { |e|
             e.messages.should == { :base => "You have entered invalid weight and/or height" } }
       end
     end
     
-    context "when age >= 50 || age < 10" do             
-      context "age is 50" do
+    context "when age is bigger or equal 50 or less than 10" do      
+      context "when age is 50" do
         let(:validated) do
-          expected_validated[:age] = 50
-          expected_validated
+          expected_type_validated[:age] = 50
+          expected_type_validated
         end
         
-        it { calculated_code.should == (expected_code - 1) }                                  
+        it "code changes by -1" do
+          expect(calculated_code).to eq(expected_code - 1) 
+        end                                 
       end
       
-      context "age is 51" do
+      context "when age is 51" do
         let(:validated) do
-          expected_validated[:age] = 51
-          expected_validated
+          expected_type_validated[:age] = 51
+          expected_type_validated
         end
         
-        it { calculated_code.should == (expected_code - 1) }
+        it "code changes by -1" do
+          expect(calculated_code).to eq(expected_code - 1) 
+        end             
       end
       
-      context "age is 9" do
+      context "when age is 9" do
         let(:validated) do
-          expected_validated[:age] = 9
-          expected_validated
+          expected_type_validated[:age] = 9
+          expected_type_validated
         end
         
-        it { calculated_code.should == (expected_code - 1) }
+        it "code changes by -1" do
+          expect(calculated_code).to eq(expected_code - 1) 
+        end            
       end
     end
   end
- 
-  describe "#binding_setting" do
-    subject(:calculated_setting) { SkiBinding::Calculator.binding_setting(validated, binding_code) }
+  
+  describe ".binding_setting" do
+    let(:calculated_setting) { SkiBinding::Calculator.binding_setting(expected_type_validated, binding_code) }
     let(:binding_code) { expected_code }
-    let(:validated) { expected_validated }
     
-    it{ calculated_setting.should == expected_setting }
+    it "calculates the expected setting" do
+      expect(calculated_setting).to eq(expected_setting)
+    end
     
     context "when no setting found" do
       let(:binding_code) { 0 }
-      it "raise error" do
+      
+      it "raises SkiBinding::Error" do
         expect { calculated_setting }.to raise_error(SkiBinding::Error) { |e|
             e.messages.should == { :base => "Please calculate z-index by hand." } }
       end
     end
   end
- 
-  describe "#setting" do
-    subject(:all_at_once_calculated) { SkiBinding::Calculator.setting(parameters) }
-    let(:parameters) { skiers_parameters }
+  
+  describe ".setting" do
+    subject(:one_pass_calculated_setting) { SkiBinding::Calculator.setting(skiers_parameter) }
     
-    it{ all_at_once_calculated.should == expected_setting }
+    it "calculates the expected setting in one pass" do
+      expect(one_pass_calculated_setting).to eq(expected_setting)
+    end
   end
   
   after(:all) do

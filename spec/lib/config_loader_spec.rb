@@ -1,36 +1,31 @@
 require 'spec_helper'
 
 # For original table with codes referred to in this tests see iso 11088 
-# Table B.1
+# table B.1
 describe "ConfigLoader" do 
-  subject(:dummy_class) { DummyClass.new.extend(SkiBinding::ConfigLoader) }
+  subject(:dummy_class) { double('empty class').extend SkiBinding::ConfigLoader }
 
-  describe "loading binding codes:" do
-    it { dummy_class.load_binding_codes.class.should_not == nil }
-    
-    context "when loaded codes" do
-      subject(:codes) { dummy_class.load_binding_codes }
+  describe "#load_binding_codes" do
+    context "loaded binding codes" do
+      let(:loaded_codes) { dummy_class.load_binding_codes }
       
-      it{ codes.class.should == Array }
-      it{ codes[0].class.should == SkiBinding::Code }
-      it{ codes.size.should == 13 }
+      it{ expect(loaded_codes).to be_instance_of(Array)}
+      it{ loaded_codes.should have(13).elements }
+      it "first element is instance of SkiBinding::Code" do
+        expect(loaded_codes[0]).to be_instance_of(SkiBinding::Code)
+      end
     end
   end
   
-  describe "loading binding settings for all codes" do
-    subject(:settings_all_codes) do
-      settings = []
-      (0..15).each { |i| settings << dummy_class.load_binding_settings(i) }
-      settings
-    end
+  describe "#load_binding_setting" do
+    let(:settings_all_codes) { (0..15).map { |i| dummy_class.load_binding_settings(i) } }
     
-    context "for each code" do
-      it { settings_all_codes.each { |s| s.class.should == Array } }
-      it { settings_all_codes.each { |s| s[0].class.should == SkiBinding::Setting } }
-      it { settings_all_codes.each { |s| s.size.should == 8 } }
+    context "for each code loaded settings" do
+      it { settings_all_codes.each { |s| expect(s).to be_instance_of(Array) } }
+      it { settings_all_codes.each { |s| s.should have(8).elements } }
+      it "first element is instance of SkiBinding::Setting" do
+        settings_all_codes.each { |s| expect(s[0]).to be_instance_of(SkiBinding::Setting) }
+      end
     end
   end
-end
-
-class DummyClass 
 end
