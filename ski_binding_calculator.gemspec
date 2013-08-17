@@ -11,12 +11,12 @@ Gem::Specification.new do |s|
   s.homepage    = 'http://fadendaten.ch'
   s.license     = 'MIT'
   
+  s.add_dependency "activesupport", "~> 4.0.0"
   s.add_development_dependency "rspec", "~> 2.14.1"
   s.add_development_dependency "spork", "~> 0.9.2"
   s.add_development_dependency "simplecov", "~> 0.7.1"
   s.add_development_dependency "timecop", "~> 0.6.3"
   s.add_development_dependency "fuubar", "~> 1.2.1"
-  s.add_runtime_dependency "activesupport", "~> 4.0.0"
 
   s.files =  Dir.glob("{config,lib,spec}/**/*")
   s.files += %w(Rakefile ski_binding_calculator.gemspec)
