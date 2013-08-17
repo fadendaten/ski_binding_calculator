@@ -1,7 +1,7 @@
 #Ski Binding Value Calculator
 [![Gem Version](https://badge.fury.io/rb/ski_binding_calculator.png)](http://badge.fury.io/rb/ski_binding_calculator)
 [![Dependency Status](https://gemnasium.com/fadendaten/ski_binding_calculator.png)](https://gemnasium.com/fadendaten/ski_binding_calculator)
-[![Build Status](https://travis-ci.org/[YOUR_GITHUB_USERNAME]/[YOUR_PROJECT_NAME].png)](https://travis-ci.org/[YOUR_GITHUB_USERNAME]/[YOUR_PROJECT_NAME])
+[![Build Status](https://travis-ci.org/[YOUR_GITHUB_USERNAME]/[YOUR_PROJECT_NAME].png)](https://travis-ci.org/fadendaten/ski_binding_calculator])
 
 
 Calculates the z-value according to ISO 11088.
