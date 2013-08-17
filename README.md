@@ -42,7 +42,12 @@ Regarding the last two sections a hash could look like that:
 
 ```ruby
 { :type => "Type2", 
-  :weight => "70", :height => "170", :sole_length => "315", :birthday_year => "1983", :birthday_month => "01", :birthday_day => "01" }
+  :weight => "70", 
+  :height => "170", 
+  :sole_length => "315", 
+  :birthday_year => "1983", 
+  :birthday_month => "01", 
+  :birthday_day => "01" }
 ```
 
 ## Codes
