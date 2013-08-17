@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ski_binding_calculator (0.7.1)
+    ski_binding_calculator (0.8.0)
       activesupport (~> 4.0.0)
 
 GEM
