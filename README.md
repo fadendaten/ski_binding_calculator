@@ -3,7 +3,6 @@
 [![Dependency Status](https://gemnasium.com/fadendaten/ski_binding_calculator.png)](https://gemnasium.com/fadendaten/ski_binding_calculator)
 [![Build Status](https://travis-ci.org/fadendaten/ski_binding_calculator.png)](https://travis-ci.org/fadendaten/ski_binding_calculator])
 
-
 Calculates the initial indicator value (z-value) according to ISO 11088 standard.
 
 ## Installation
