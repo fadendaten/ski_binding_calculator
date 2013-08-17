@@ -8,6 +8,7 @@ Calculates the initial indicator value (z-value) according to ISO 11088 standard
 
 ## Installation
 Add to your Gemfile: <code>gem ski_binding_calculator</code>, run <code>$ bundle install</code>.
+Even though not version 1.x this gem is stable and fully tested. Productive use is possible but at your own risk.
 
 ## Usage
 You can give the calculator a hash with the following key value pairs:
