@@ -1,4 +1,4 @@
-require 'ski_binding_calculator/ski_binding'
+require 'ski_binding_calculator/version'
 require 'ski_binding_calculator/calculator'
 require 'ski_binding_calculator/config_loader'
 require 'ski_binding_calculator/code'

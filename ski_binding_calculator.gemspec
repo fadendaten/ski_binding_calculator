@@ -1,7 +1,9 @@
-Gem::Specification.new do |s|
+$LOAD_PATH.unshift File.expand_path('../lib', __FILE__)
+require 'ski_binding_calculator/version'
 
+Gem::Specification.new do |s|
   s.name        = 'ski_binding_calculator'
-  s.version     = '0.8.0'
+  s.version     = SkiBinding::VERSION
   s.summary     = "Ski Binding Calculator"
   s.description = "Calculates the z-value according to ISO 11088."
   s.authors     = ["Jonas Ruef, Felix Langenegger"]
