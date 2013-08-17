@@ -1,7 +1,8 @@
 PATH
   remote: .
   specs:
-    ski_binding_calculator (0.7.0)
+    ski_binding_calculator (0.7.1)
+      activesupport (~> 4.0.0)
 
 GEM
   remote: https://rubygems.org/
@@ -14,7 +15,7 @@ GEM
       tzinfo (~> 0.3.37)
     atomic (1.1.13)
     diff-lcs (1.2.4)
-    fuubar (1.1.1)
+    fuubar (1.2.1)
       rspec (~> 2.0)
       rspec-instafail (~> 0.2.0)
       ruby-progressbar (~> 1.0)
@@ -46,8 +47,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activesupport (~> 4.0.0)
-  fuubar (~> 1.1.1)
+  fuubar (~> 1.2.1)
   rake
   rspec (~> 2.14.1)
   simplecov (~> 0.7.1)

@@ -1,5 +1,4 @@
-class SkiBinding::Error < StandardError
-  
+class SkiBinding::Error < StandardError 
   def initialize(key = nil, value = nil)
     @messages = {}
     
