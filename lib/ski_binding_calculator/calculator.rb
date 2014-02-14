@@ -35,14 +35,14 @@ class SkiBinding::Calculator
       if hashy[:weight] < 10.0
         raise SkiBinding::Error.new(*[:weight, "is less than 10kg"])
       end
+      hashy[:height] = attrs[:height].to_f
       if hashy[:height] <= 0.0
         raise SkiBinding::Error.new(*[:height, "must be bigger than 0"])
       end
+      hashy[:sole_length] = attrs[:sole_length].to_f
       if hashy[:sole_length] <= 0.0
         raise SkiBinding::Error.new(*[:sole_length, "must be bigger than 0"])
       end
-      hashy[:height] = attrs[:height].to_f
-      hashy[:sole_length] = attrs[:sole_length].to_f
       hashy[:birthday_year] = attrs[:birthday_year].to_i 
       hashy[:birthday_month] = attrs[:birthday_month].to_i 
       hashy[:birthday_day] = attrs[:birthday_day].to_i

@@ -93,14 +93,36 @@ describe SkiBinding::Calculator do
       end
     end
     
-    context "when weight is less than 9kg" do
+    context "when weight is less than 10kg" do
       let(:parameters) do
         skiers_parameter[:weight] = 9 
         skiers_parameter
       end
       it "raises SkiBinding::Error" do
-          expect { calculated_preped }.to raise_error(SkiBinding::Error) { |e|
-            e.messages.should == { :weight => "is less than 10kg" } }
+        expect { calculated_preped }.to raise_error(SkiBinding::Error) { |e|
+          e.messages.should == { :weight => "is less than 10kg" } }
+      end
+    end
+    
+    context "when height is less than one" do
+      let(:parameters) do
+        skiers_parameter[:height] = 0
+        skiers_parameter
+      end
+      it "raises SkiBinding::Error" do
+        expect { calculated_preped }.to raise_error(SkiBinding::Error) { |e|
+          e.messages.should == { :height => "must be bigger than 0" } }
+      end
+    end
+    
+    context "when sole_length is less than one" do
+      let(:parameters) do
+        skiers_parameter[:sole_length] = 0
+        skiers_parameter
+      end
+      it "raises SkiBinding::Error" do
+        expect { calculated_preped }.to raise_error(SkiBinding::Error) { |e|
+          e.messages.should == { :sole_length => "must be bigger than 0" } }
       end
     end
   end
