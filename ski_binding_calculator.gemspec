@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.email       = 'support@fadendaten.ch'
   s.homepage    = 'http://fadendaten.ch'
   s.license     = 'MIT'
-  
+
   s.add_runtime_dependency "activesupport", ">= 3.2.13"
   s.add_development_dependency "rspec", "~> 2.14.1"
   s.add_development_dependency "spork", "~> 0.9.2"
